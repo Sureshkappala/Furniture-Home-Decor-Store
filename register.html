@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Register Client Account - Create your Aurelia account to access custom design moodboards, spatial planning telemetry, and restoration reports.">
+    <title>Create Account | Aurelia Portal</title>
+    <link rel="stylesheet" href="css/style.css?v=2.7">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <style>
+        .form-grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.2rem;
+        }
+        @media (max-width: 576px) {
+            .form-grid-2 {
+                grid-template-columns: 1fr !important;
+                gap: 1rem;
+            }
+        }
+        .back-to-home-container {
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+            z-index: 100;
+        }
+        @media (max-width: 768px) {
+            .back-to-home-container {
+                position: static !important;
+                margin-bottom: 1.5rem !important;
+                text-align: center !important;
+                width: 100% !important;
+            }
+            .back-to-home-container a {
+                display: inline-flex !important;
+                justify-content: center !important;
+                align-items: center !important;
+            }
+        }
+    </style>
+</head>
+<body style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; padding: 2rem 1.5rem; background-color: var(--bg-primary);">
+
+    <div class="preloader">
+        <div class="preloader-loader"></div>
+        <div class="preloader-logo-text" style="font-family: var(--font-display); font-size: 2.2rem; font-weight: 700; color: var(--text-light); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1.5rem;">
+            Stackly
+        </div>
+    </div>
+    
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+
+    <!-- Floating Back to Home Button -->
+    <div class="back-to-home-container">
+        <a href="index.html" class="btn btn-secondary btn-sm" style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; border-radius: var(--radius-sm);"><i class="fa-solid fa-house"></i> Back to Home</a>
+    </div>
+
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+    </div>
+
+    <!-- REGISTRATION CARD -->
+    <div class="glass-card" style="width: 100%; max-width: 540px; padding: 2.5rem 2.5rem; text-align: center; z-index: 10; margin: 2rem 0; max-height: 90vh; overflow-y: auto; border-radius: var(--radius-md);" data-aos="zoom-in" data-aos-duration="1000">
+        <div style="margin-bottom: 1.5rem;">
+            <a href="index.html" style="display: inline-block;">
+                <img src="images/logo.webp" alt="Stackly Logo" style="height: 36px; width: auto; object-fit: contain; filter: brightness(0) invert(1);">
+            </a>
+            <h2 style="font-size: 1.8rem; font-weight: 700; margin-top: 1rem; color: var(--text-light);">Create Account</h2>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.3rem;">Register your client portal or agency partner profile.</p>
+        </div>
+
+        <form id="registerForm" style="display: flex; flex-direction: column; gap: 1.1rem; text-align: left;">
+            <div class="form-group" style="display: flex; flex-direction: column; gap: 0.5rem;">
+                <label for="reg-name" style="font-size: 0.85rem; font-weight: 600; color: var(--text-light);">Full Name</label>
+                <div style="position: relative;">
+                    <i class="fa-solid fa-user" style="position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 0.9rem;"></i>
+                    <input type="text" id="reg-name" placeholder="John Doe" required style="width: 100%; padding: 0.8rem 1rem 0.8rem 2.5rem; border-radius: var(--radius-sm); border: 1px solid var(--border-glass); background: rgba(255, 255, 255, 0.03); color: var(--text-light); transition: border-color var(--transition-fast); outline: none;">
+                </div>
+            </div>
+
+            <!-- Email & Phone Grid -->
+            <div class="form-grid-2">
+                <div class="form-group" style="display: flex; flex-direction: column; gap: 0.5rem;">
+                    <label for="reg-email" style="font-size: 0.85rem; font-weight: 600; color: var(--text-light);">Email Address</label>
+                    <div style="position: relative;">
+                        <i class="fa-solid fa-envelope" style="position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 0.9rem;"></i>
+                        <input type="email" id="reg-email" placeholder="john@example.com" required style="width: 100%; padding: 0.8rem 1rem 0.8rem 2.5rem; border-radius: var(--radius-sm); border: 1px solid var(--border-glass); background: rgba(255, 255, 255, 0.03); color: var(--text-light); transition: border-color var(--transition-fast); outline: none;">
+                    </div>
+                </div>
+                <div class="form-group" style="display: flex; flex-direction: column; gap: 0.5rem;">
+                    <label for="reg-phone" style="font-size: 0.85rem; font-weight: 600; color: var(--text-light);">Phone Number</label>
+                    <div style="position: relative;">
+                        <i class="fa-solid fa-phone" style="position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 0.9rem;"></i>
+                        <input type="tel" id="reg-phone" placeholder="1234567890" required style="width: 100%; padding: 0.8rem 1rem 0.8rem 2.5rem; border-radius: var(--radius-sm); border: 1px solid var(--border-glass); background: rgba(255, 255, 255, 0.03); color: var(--text-light); transition: border-color var(--transition-fast); outline: none;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Password Grid -->
+            <div class="form-grid-2">
+                <div class="form-group" style="display: flex; flex-direction: column; gap: 0.5rem;">
+                    <label for="reg-password" style="font-size: 0.85rem; font-weight: 600; color: var(--text-light);">Password</label>
+                    <div style="position: relative;">
+                        <i class="fa-solid fa-lock" style="position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 0.9rem;"></i>
+                        <input type="password" id="reg-password" placeholder="••••••••" required style="width: 100%; padding: 0.8rem 2.5rem 0.8rem 2.5rem; border-radius: var(--radius-sm); border: 1px solid var(--border-glass); background: rgba(255, 255, 255, 0.03); color: var(--text-light); transition: border-color var(--transition-fast); outline: none;">
+                        <span class="password-toggle" onclick="togglePasswordVisibility('reg-password', this)" style="position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); color: var(--text-muted); cursor: pointer; font-size: 0.9rem; transition: color var(--transition-fast);"><i class="fa-solid fa-eye"></i></span>
+                    </div>
+                </div>
+                <div class="form-group" style="display: flex; flex-direction: column; gap: 0.5rem;">
+                    <label for="reg-confirm" style="font-size: 0.85rem; font-weight: 600; color: var(--text-light);">Confirm Password</label>
+                    <div style="position: relative;">
+                        <i class="fa-solid fa-lock" style="position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 0.9rem;"></i>
+                        <input type="password" id="reg-confirm" placeholder="••••••••" required style="width: 100%; padding: 0.8rem 2.5rem 0.8rem 2.5rem; border-radius: var(--radius-sm); border: 1px solid var(--border-glass); background: rgba(255, 255, 255, 0.03); color: var(--text-light); transition: border-color var(--transition-fast); outline: none;">
+                        <span class="password-toggle" onclick="togglePasswordVisibility('reg-confirm', this)" style="position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); color: var(--text-muted); cursor: pointer; font-size: 0.9rem; transition: color var(--transition-fast);"><i class="fa-solid fa-eye"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Select Role dropdown -->
+            <div class="form-group" style="display: flex; flex-direction: column; gap: 0.5rem;">
+                <label for="reg-role" style="font-size: 0.85rem; font-weight: 600; color: var(--text-light);">Select Role</label>
+                <div style="position: relative;">
+                    <i class="fa-solid fa-user-shield" style="position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 0.9rem;"></i>
+                    <select id="reg-role" required style="width: 100%; padding: 0.8rem 1rem 0.8rem 2.5rem; border-radius: var(--radius-sm); border: 1px solid var(--border-glass); background: rgba(255, 255, 255, 0.03); color: var(--text-light); transition: border-color var(--transition-fast); outline: none; appearance: none; -webkit-appearance: none;">
+                        <option value="" disabled selected style="background-color: var(--bg-secondary); color: var(--text-muted);">Select Role</option>
+                        <option value="client" style="background-color: var(--bg-secondary); color: var(--text-light);">Client (View Analytics)</option>
+                        <option value="admin" style="background-color: var(--bg-secondary); color: var(--text-light);">System Administrator (Manage Accounts)</option>
+                    </select>
+                    <i class="fa-solid fa-chevron-down" style="position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 0.8rem; pointer-events: none;"></i>
+                </div>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 0.4rem; font-size: 0.8rem; margin-top: 0.2rem;">
+                <label style="display: flex; align-items: center; gap: 0.4rem; color: var(--text-muted); cursor: pointer; white-space: nowrap;">
+                    <input type="checkbox" required style="accent-color: var(--accent);"> I agree to the <a href="#" style="color: var(--accent); text-decoration: none; font-weight: 600; white-space: nowrap;">Terms & Conditions</a>
+                </label>
+            </div>
+
+            <button type="submit" class="btn btn-accent" style="width: 100%; padding: 0.9rem; margin-top: 0.5rem; font-weight: 700; border-radius: var(--radius-sm);">Register Account</button>
+        </form>
+
+        <div id="registerSuccess" style="display: none; padding: 2rem 0; animation: fadeIn 0.5s ease;">
+            <i class="fa-solid fa-circle-check" style="font-size: 3.5rem; color: var(--accent); margin-bottom: 1rem;"></i>
+            <h3 style="color: var(--text-light); font-size: 1.3rem;">Registration Complete</h3>
+            <p style="color: var(--text-muted); margin: 0.5rem 0 1.5rem 0; font-size: 0.9rem;">Your brand profile has been created. Redirecting to Login...</p>
+            <a href="login.html" class="btn btn-secondary" style="display: inline-block;">Proceed to Login</a>
+        </div>
+
+        <div style="margin-top: 1.5rem; border-top: 1px solid var(--border-glass); padding-top: 1.2rem;">
+            <p style="color: var(--text-muted); font-size: 0.85rem;">Already have a design account? <a href="login.html" style="color: var(--accent); font-weight: 600; text-decoration: none;">Login Here</a></p>
+        </div>
+    </div>
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, duration: 800, easing: 'ease-out-cubic' });
+    </script>
+    <script src="js/main.js?v=2.7"></script>
+</body>
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Our Services - Elevate your interiors with living room styling, bedroom design, custom carpentry, layout planning, and furniture restoration services.">
+    <title>Services | Aurelia Furniture & Interior Design Studio</title>
+    <link rel="stylesheet" href="css/style.css?v=2.7">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+</head>
+<body>
+
+    <!-- PRELOADER -->
+    <div class="preloader">
+        <div class="preloader-loader"></div>
+    </div>
+
+    <!-- HEADER & NAVBAR -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo" style="display: flex; align-items: center; text-decoration: none;">
+                <img src="images/logo.webp" alt="Stackly Logo" style="height: 38px; width: auto; object-fit: contain; filter: brightness(0) invert(1);">
+            </a>
+            
+            <nav class="navbar">
+                <div class="drawer-header">
+                    <img src="images/logo.webp" alt="Stackly Logo" class="brand-logo-img" style="height: 32px;">
+                    <button class="drawer-close" aria-label="Close Menu"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <!-- Drawer Search -->
+                <div class="drawer-search">
+                    <div style="position: relative; width: 100%;">
+                        <input type="text" placeholder="Search solutions..." style="width: 100%; padding: 0.75rem 1rem 0.75rem 1.2rem; background: rgba(255,255,255,0.03); border: 1px solid var(--border-glass); border-radius: var(--radius-sm); color: var(--text-light); font-size: 0.85rem; outline: none;">
+                        <i class="fa-solid fa-magnifying-glass" style="position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 0.85rem; pointer-events: none;"></i>
+                    </div>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="workflow.html">Process</a></li>
+                    <li><a href="portfolio.html">Work</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-mobile-cta">
+                    <a href="login.html" class="btn btn-secondary">Login</a>
+                    <a href="contact.html" class="btn btn-primary">Book Consultation</a>
+                </div>
+                
+                <!-- Drawer Contact Info -->
+                <div class="drawer-contact-info">
+                    <h5>Contact Info</h5>
+                    <p><i class="fa-solid fa-phone"></i> +1 (212) 555-0189</p>
+                    <p><i class="fa-solid fa-envelope"></i> concierge@aureliadecor.com</p>
+                    <p><i class="fa-solid fa-location-dot"></i> 158 Mercer St, Soho, New York, NY</p>
+                </div>
+            </nav>
+            
+            <div class="nav-controls">
+
+                <a href="login.html" class="btn btn-secondary btn-sm" style="margin-right: 0.5rem;"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+                <a href="contact.html" class="btn btn-primary btn-sm">Book Consultation</a>
+                <button class="menu-toggle" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- SUBPAGE HERO -->
+    <section class="hero" id="hero" style="min-height: 50vh; padding: 10rem 0 3rem 0; text-align: center;">
+        <div class="background-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
+            <span class="badge"><i class="fa-solid fa-gears"></i> Solutions</span>
+            <h1 style="font-size: 3rem; margin-bottom: 1rem;">Design <span>Specialties</span></h1>
+            <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">Select from our bespoke design programs built to harmonize your interior layouts and curate luxury living.</p>
+        </div>
+    </section>
+
+    <!-- SERVICES GRID -->
+    <section class="section-padding" style="padding-top: 2rem; position: relative; z-index: 10;">
+        <div class="container" style="display: flex; flex-direction: column; gap: 6rem;">
+            
+            <!-- Row 1: The Living & Dining Collections -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;" data-aos="fade-up" data-aos-duration="1000">
+                <div class="glass-card" style="padding: 0; overflow: hidden; border-radius: 48px 4px 48px 4px; height: 420px; box-shadow: var(--shadow-lg);">
+                    <img src="images/walnut_lounge.webp" alt="The Soho Walnut Collection" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div>
+                    <span class="badge"><i class="fa-solid fa-couch"></i> Interior Spaces</span>
+                    <h2 style="font-size: 2.2rem; margin: 0.8rem 0 1.2rem 0; font-family: var(--font-display);">Living & Dining <span>Showrooms</span></h2>
+                    <p style="color: var(--text-muted); margin-bottom: 2rem; font-size: 0.95rem;">Curate welcoming, spacious lounge and hosting areas. We match premium hardwoods with tailored seating, optimizing floor space efficiency.</p>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem;">
+                        <div>
+                            <h4 style="color: var(--text-light); font-size: 1.05rem; margin-bottom: 0.4rem;"><a href="living-room.html" style="color: inherit; text-decoration: none;">Living Room Styling <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8rem; color: var(--bronze);"></i></a></h4>
+                            <p style="font-size: 0.85rem; color: var(--text-muted);">Symmetry alignments, conversation areas, and velvet upholstery.</p>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--text-light); font-size: 1.05rem; margin-bottom: 0.4rem;"><a href="dining-room.html" style="color: inherit; text-decoration: none;">Dining Architecture <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8rem; color: var(--bronze);"></i></a></h4>
+                            <p style="font-size: 0.85rem; color: var(--text-muted);">Solid oak dining tables, ergonomic leather seating, and sound-proofing.</p>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--text-light); font-size: 1.05rem; margin-bottom: 0.4rem;"><a href="color-material.html" style="color: inherit; text-decoration: none;">Color & Material <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8rem; color: var(--bronze);"></i></a></h4>
+                            <p style="font-size: 0.85rem; color: var(--text-muted);">Walnut grain matches, linen weaves, and paint consultations.</p>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--text-light); font-size: 1.05rem; margin-bottom: 0.4rem;"><a href="storage-solutions.html" style="color: inherit; text-decoration: none;">Storage Solutions <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8rem; color: var(--bronze);"></i></a></h4>
+                            <p style="font-size: 0.85rem; color: var(--text-muted);">Walk-in wardrobes, custom media consoles, and hidden storage.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 2: The Bedroom & Sanctuary Collections -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;" data-aos="fade-up" data-aos-duration="1000">
+                <div style="order: 2;">
+                    <div class="glass-card" style="padding: 0; overflow: hidden; border-radius: 4px 48px 4px 48px; height: 420px; box-shadow: var(--shadow-lg);">
+                        <img src="images/lookbook_bedroom.webp" alt="The Linen Sanctuary Bedroom" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+                <div style="order: 1;">
+                    <span class="badge"><i class="fa-solid fa-bed"></i> Sanctuaries</span>
+                    <h2 style="font-size: 2.2rem; margin: 0.8rem 0 1.2rem 0; font-family: var(--font-display);">Bedroom & <span>Sanctuary Curation</span></h2>
+                    <p style="color: var(--text-muted); margin-bottom: 2rem; font-size: 0.95rem;">Design calming bedroom retreats. We pair sound-dampening panels, custom headboards, and tailored nightstands to build tranquil sanctuaries.</p>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem;">
+                        <div>
+                            <h4 style="color: var(--text-light); font-size: 1.05rem; margin-bottom: 0.4rem;"><a href="bedroom.html" style="color: inherit; text-decoration: none;">Sanctuary Bedrooms <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8rem; color: var(--bronze);"></i></a></h4>
+                            <p style="font-size: 0.85rem; color: var(--text-muted);">Custom platform frames, headboards, and sound-control panels.</p>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--text-light); font-size: 1.05rem; margin-bottom: 0.4rem;"><a href="accent-lighting.html" style="color: inherit; text-decoration: none;">Accent Lighting <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8rem; color: var(--bronze);"></i></a></h4>
+                            <p style="font-size: 0.85rem; color: var(--text-muted);">Dimmable brass sconces, daylight balance, and chandeliers.</p>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--text-light); font-size: 1.05rem; margin-bottom: 0.4rem;"><a href="furniture-restoration.html" style="color: inherit; text-decoration: none;">Restoration <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8rem; color: var(--bronze);"></i></a></h4>
+                            <p style="font-size: 0.85rem; color: var(--text-muted);">Solid wood surface refinishing, joint repairs, and fabric re-upholstery.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 3: The Architectural Outdoor & Fittings Collections -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;" data-aos="fade-up" data-aos-duration="1000">
+                <div class="glass-card" style="padding: 0; overflow: hidden; border-radius: 48px 4px 48px 4px; height: 420px; box-shadow: var(--shadow-lg);">
+                    <img src="images/lookbook_outdoor.webp" alt="The Outdoor Teak Lounge" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div>
+                    <span class="badge"><i class="fa-solid fa-tree"></i> Outdoor & Workspace</span>
+                    <h2 style="font-size: 2.2rem; margin: 0.8rem 0 1.2rem 0; font-family: var(--font-display);">Architectural & <span>Outdoor Lines</span></h2>
+                    <p style="color: var(--text-muted); margin-bottom: 2rem; font-size: 0.95rem;">Extend luxury styling to exterior lounge decks and home workspaces, combining teak woods, metals, and weatherproof textiles.</p>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem;">
+                        <div>
+                            <h4 style="color: var(--text-light); font-size: 1.05rem; margin-bottom: 0.4rem;"><a href="outdoor-lounge.html" style="color: inherit; text-decoration: none;">Outdoor & Patio Lounge <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8rem; color: var(--bronze);"></i></a></h4>
+                            <p style="font-size: 0.85rem; color: var(--text-muted);">Teak and aluminium sun loungers, and exterior lanterns.</p>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--text-light); font-size: 1.05rem; margin-bottom: 0.4rem;"><a href="home-office.html" style="color: inherit; text-decoration: none;">Home Office Designs <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8rem; color: var(--bronze);"></i></a></h4>
+                            <p style="font-size: 0.85rem; color: var(--text-muted);">Custom desks, ergonomic seats, and filing layouts.</p>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--text-light); font-size: 1.05rem; margin-bottom: 0.4rem;"><a href="home-staging.html" style="color: inherit; text-decoration: none;">Home Staging <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8rem; color: var(--bronze);"></i></a></h4>
+                            <p style="font-size: 0.85rem; color: var(--text-muted);">Fine art curation, room styling accent accessories, and staging.</p>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--text-light); font-size: 1.05rem; margin-bottom: 0.4rem;"><a href="carpentry-craft.html" style="color: inherit; text-decoration: none;">Carpentry & Joint Craft <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8rem; color: var(--bronze);"></i></a></h4>
+                            <p style="font-size: 0.85rem; color: var(--text-muted);">Brooklyn atelier fabrication, and floating wood shelving.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ACCELERATION PLANS -->
+    <section class="section-padding" id="pricing" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-glass); border-bottom: 1px solid var(--border-glass);">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up" data-aos-duration="800" style="text-align: center; margin-bottom: 3.5rem;">
+                <span class="badge"><i class="fa-solid fa-gauge-high"></i> Curation Packages</span>
+                <h2>Interior Design & Styling <span>Packages</span></h2>
+                <p>Select a curation package tailored to your design scope and space requirements. All plans include designer guidance.</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Plan 1 -->
+                <div class="glass-card" style="padding: 2.5rem 2.2rem; display: flex; flex-direction: column; justify-content: space-between; border-color: rgba(255,255,255,0.05);" data-aos="fade-up" data-aos-duration="800">
+                    <div>
+                        <h4 style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent); margin-bottom: 0.5rem;">Styling Consultation</h4>
+                        <div style="font-size: 2.2rem; font-weight: 800; color: var(--text-light); margin-bottom: 1rem;">$1,500<span style="font-size: 0.9rem; font-weight: 500; color: var(--text-muted);">/session</span></div>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.5; margin-bottom: 1.5rem;">Perfect for refreshing a single room with custom color schemes, moodboards, and minor furniture sourcing.</p>
+                        <ul style="list-style: none; padding: 0; margin-bottom: 1.5rem; display: flex; flex-direction: column; gap: 0.6rem; font-size: 0.85rem; color: var(--text-muted);">
+                            <li><i class="fa-solid fa-circle-check" style="color: var(--accent); margin-right: 0.5rem;"></i> Single Room Moodboard Design</li>
+                            <li><i class="fa-solid fa-circle-check" style="color: var(--accent); margin-right: 0.5rem;"></i> Color & Material Consultation</li>
+                            <li><i class="fa-solid fa-circle-check" style="color: var(--accent); margin-right: 0.5rem;"></i> Curated Furniture Sourcing List</li>
+                            <li><i class="fa-solid fa-circle-check" style="color: var(--accent); margin-right: 0.5rem;"></i> Bi-Weekly Designer Video Syncs</li>
+                        </ul>
+                    </div>
+                    <a href="contact.html" class="btn btn-secondary" style="width: 100%; text-align: center; padding: 0.8rem; font-size: 0.9rem; border-radius: var(--radius-sm); font-weight: 700;">Book Session</a>
+                </div>
+
+                <!-- Plan 2 -->
+                <div class="glass-card" style="padding: 2.5rem 2.2rem; display: flex; flex-direction: column; justify-content: space-between; border-color: var(--accent); box-shadow: var(--shadow-glow-purple);" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">
+                    <div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                            <h4 style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--primary);">Scale Engine</h4>
+                            <span style="background: rgba(16, 185, 129, 0.1); color: #10b981; font-size: 0.75rem; padding: 0.2rem 0.6rem; border-radius: var(--radius-full); font-weight: 700;">Most Popular</span>
+                        </div>
+                        <div style="font-size: 2.2rem; font-weight: 800; color: var(--text-light); margin-bottom: 1rem;">$3,500<span style="font-size: 0.9rem; font-weight: 500; color: var(--text-muted);">/session</span></div>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.5; margin-bottom: 1.5rem;">Designed for luxury room layouts ready to curate ambient lighting and custom furniture fabrications.</p>
+                        <ul style="list-style: none; padding: 0; margin-bottom: 1.5rem; display: flex; flex-direction: column; gap: 0.6rem; font-size: 0.85rem; color: var(--text-muted);">
+                            <li><i class="fa-solid fa-circle-check" style="color: var(--primary); margin-right: 0.5rem;"></i> Weekly Video Consultations</li>
+                            <li><i class="fa-solid fa-circle-check" style="color: var(--primary); margin-right: 0.5rem;"></i> Headless Landing Page Dev</li>
+                            <li><i class="fa-solid fa-circle-check" style="color: var(--primary); margin-right: 0.5rem;"></i> Up to $50k Managed Estimated Budget</li>
+                            <li><i class="fa-solid fa-circle-check" style="color: var(--primary); margin-right: 0.5rem;"></i> Real-Time Looker Studio Panel</li>
+                        </ul>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary" style="width: 100%; text-align: center; padding: 0.8rem; font-size: 0.9rem; border-radius: var(--radius-sm); font-weight: 700;">Book Session</a>
+                </div>
+
+                <!-- Plan 3 -->
+                <div class="glass-card" style="padding: 2.5rem 2.2rem; display: flex; flex-direction: column; justify-content: space-between; border-color: rgba(255,255,255,0.05);" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                    <div>
+                        <h4 style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent); margin-bottom: 0.5rem;">Enterprise Command</h4>
+                        <div style="font-size: 2.2rem; font-weight: 800; color: var(--text-light); margin-bottom: 1rem;">Custom Pricing</div>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.5; margin-bottom: 1.5rem;">Comprehensive custom integrations, advanced database engineering, and scaling pipelines for high-traffic networks.</p>
+                        <ul style="list-style: none; padding: 0; margin-bottom: 1.5rem; display: flex; flex-direction: column; gap: 0.6rem; font-size: 0.85rem; color: var(--text-muted);">
+                            <li><i class="fa-solid fa-circle-check" style="color: var(--accent); margin-right: 0.5rem;"></i> Dedicated Growth Architect</li>
+                            <li><i class="fa-solid fa-circle-check" style="color: var(--accent); margin-right: 0.5rem;"></i> Headless Storefront Migration</li>
+                            <li><i class="fa-solid fa-circle-check" style="color: var(--accent); margin-right: 0.5rem;"></i> Unlimited Managed Estimated Budget</li>
+                            <li><i class="fa-solid fa-circle-check" style="color: var(--accent); margin-right: 0.5rem;"></i> 24/7 Priority Support SLAs</li>
+                        </ul>
+                    </div>
+                    <a href="contact.html" class="btn btn-secondary" style="width: 100%; text-align: center; padding: 0.8rem; font-size: 0.9rem; border-radius: var(--radius-sm); font-weight: 700;">Book Session</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.webp" alt="Stackly Logo" style="height: 38px; width: auto; object-fit: contain; filter: brightness(0) invert(1);">
+                </a>
+                <p>Aurelia is a high-performance luxury Furniture & Interior Design studio built to elevate homes. We combine spatial flow analysis, custom wood craftsmanship, premium textile curation, and lighting design to create extraordinary spaces.</p>
+                <div class="social-icons-footer">
+                    <a href="#" aria-label="Facebook Link"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter X Link"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn Link"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Instagram Link"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="services.html">Services</a>
+                    <a href="workflow.html">Design Workflow</a>
+                    <a href="portfolio.html">Design Portfolio</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Services</h4>
+                <div class="footer-links">
+                    <a href="living-room.html">Living Room Styling</a>
+                    <a href="bedroom.html">Bespoke Bedroom Design</a>
+                    <a href="dining-room.html">Dining Room Architecture</a>
+                    <a href="home-staging.html">Home Staging & Styling</a>
+                    <a href="storage-solutions.html">Bespoke Storage Solutions</a>
+                    <a href="furniture-restoration.html">Furniture Restoration</a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.2rem;">Subscribe to receive style forecasts, custom wood-shop updates, and interior design trend reports from our team.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" aria-label="Submit Newsletter"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Stackly. All Rights Reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" role="button" aria-label="Scroll back to top">
+        <svg class="btt-svg" viewBox="0 0 50 50">
+            <circle class="btt-circle" cx="25" cy="25" r="22"></circle>
+        </svg>
+        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" style="position: relative; z-index: 2;"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js?v=2.7"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true });
+    </script>
+</body>
+</html>

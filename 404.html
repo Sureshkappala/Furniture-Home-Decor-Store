@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Telemetry Error - Page not found at Aurelia Furniture & Interior Design Studio portal.">
+    <title>Telemetry Error (404) | Aurelia Portal</title>
+    <link rel="stylesheet" href="css/style.css?v=2.7">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <style>
+        @media (max-width: 480px) {
+            .error-actions {
+                flex-direction: column !important;
+                width: 100% !important;
+                gap: 0.8rem !important;
+            }
+            .error-actions .btn {
+                width: 100% !important;
+                text-align: center !important;
+                justify-content: center !important;
+            }
+            .error-card {
+                padding: 3rem 1.5rem !important;
+            }
+        }
+    </style>
+</head>
+<body style="display: flex; align-items: center; justify-content: center; min-height: 100vh; background-color: var(--bg-primary);">
+
+    <!-- PRELOADER -->
+    <div class="preloader">
+        <div class="preloader-loader"></div>
+    </div>
+    
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+
+    <div class="background-shapes" style="position: fixed;">
+        <div class="shape shape-1" style="top: 15%; left: 15%; width: 250px; height: 250px; background: var(--primary);"></div>
+        <div class="shape shape-2" style="bottom: 15%; right: 15%; width: 350px; height: 350px; background: var(--accent);"></div>
+    </div>
+
+    <!-- 404 ERROR CARD -->
+    <div class="glass-card error-card" style="width: 100%; max-width: 500px; padding: 4rem 3rem; text-align: center; z-index: 10; border-radius: var(--radius-md);" data-aos="zoom-in" data-aos-duration="1000">
+        <div style="margin-bottom: 2.5rem; position: relative;">
+            <!-- Big Glitchy 404 text -->
+            <h1 style="font-size: 8rem; font-weight: 800; line-height: 1; background: var(--gradient-purple-blue); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin: 0; filter: drop-shadow(0 0 15px var(--primary-glow));">404</h1>
+            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 8.2rem; font-weight: 800; line-height: 1; color: var(--accent); opacity: 0.15; z-index: -1;">404</div>
+        </div>
+
+        <span class="badge" style="margin-bottom: 1.2rem; display: inline-block;"><i class="fa-solid fa-triangle-exclamation"></i> Telemetry Error</span>
+        <h2 style="font-size: 1.8rem; color: var(--text-light); margin-bottom: 1rem;">Page Lost in <span>Transmissions</span></h2>
+        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 2rem;">We can't seem to find the page you're looking for. The link may be broken, or the page has been moved. Let's get you back on track.</p>
+
+        <div class="error-actions" style="display: flex; gap: 1rem; justify-content: center;">
+            <a href="index.html" class="btn btn-primary"><i class="fa-solid fa-house" style="margin-right: 0.5rem;"></i> Back to Home</a>
+            <a href="#" onclick="history.back(); return false;" class="btn btn-secondary"><i class="fa-solid fa-arrow-left" style="margin-right: 0.5rem;"></i> Go Back</a>
+        </div>
+    </div>
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, duration: 800, easing: 'ease-out-cubic' });
+    </script>
+    <script src="js/main.js?v=2.7"></script>
+</body>
+</html>

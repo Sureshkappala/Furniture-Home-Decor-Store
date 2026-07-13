@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aurelia - Luxury Furniture & Bespoke Interior Design. SEO, Commercial, Social Media, Bespoke Lighting, and custom Dining Room Architecture solutions.">
+    <title>Stackly | Luxury Furniture & Bespoke Interiors</title>
+    
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="css/style.css?v=2.7">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- AOS CSS for scroll animations -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+</head>
+<body>
+
+    <!-- ==========================================
+       PRELOADER (GROWTH CHARTS PULSE)
+       ========================================== -->
+    <div class="preloader">
+        <div class="preloader-loader"></div>
+        <div class="preloader-logo-text" style="font-family: var(--font-display); font-size: 2.2rem; font-weight: 700; color: var(--text-light); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1.5rem;">
+            Stackly
+        </div>
+    </div>
+
+    <!-- ==========================================
+       SCROLL PROGRESS & CUSTOM CURSOR
+       ========================================== -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar"></div>
+    </div>
+    
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+
+    <!-- ==========================================
+       HEADER & NAVBAR
+       ========================================== -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo" style="display: flex; align-items: center; text-decoration: none;">
+                <img src="images/logo.webp" alt="Stackly Logo" style="height: 38px; width: auto; object-fit: contain; filter: brightness(0) invert(1);">
+            </a>
+            
+            <nav class="navbar">
+                <div class="drawer-header">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.webp" alt="Stackly Logo" style="height: 32px; width: auto; object-fit: contain; filter: brightness(0) invert(1);">
+                    </a>
+                    <button class="drawer-close" aria-label="Close Menu"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <!-- Drawer Search -->
+                <div class="drawer-search">
+                    <div style="position: relative; width: 100%;">
+                        <input type="text" placeholder="Search solutions..." style="width: 100%; padding: 0.75rem 1rem 0.75rem 1.2rem; background: rgba(255,255,255,0.03); border: 1px solid var(--border-glass); border-radius: var(--radius-sm); color: var(--text-light); font-size: 0.85rem; outline: none;">
+                        <i class="fa-solid fa-magnifying-glass" style="position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 0.85rem; pointer-events: none;"></i>
+                    </div>
+                </div>
+
+                
+                    <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="workflow.html">Process</a></li>
+                    <li><a href="portfolio.html">Work</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-mobile-cta">
+                    <a href="login.html" class="btn btn-secondary">Login</a>
+                    <a href="contact.html" class="btn btn-primary">Book Consultation</a>
+                </div>
+                
+                <!-- Drawer Contact Info -->
+                <div class="drawer-contact-info">
+                    <h5>Contact Info</h5>
+                    <p><i class="fa-solid fa-phone"></i> +1 (212) 555-0189</p>
+                    <p><i class="fa-solid fa-envelope"></i> concierge@aureliadecor.com</p>
+                    <p><i class="fa-solid fa-location-dot"></i> 158 Mercer St, Soho, New York, NY</p>
+                </div>
+            </nav>
+            
+            <div class="nav-controls">
+                <a href="login.html" class="btn btn-secondary btn-sm" style="margin-right: 0.5rem;"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+                <a href="contact.html" class="btn btn-primary btn-sm">Book Consultation</a>
+                <button class="menu-toggle" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==========================================
+       HERO SECTION (UNIQUE INTERACTIVE COMMAND CENTER CONSOLE)
+       ========================================== -->
+    <section class="hero" id="hero" style="overflow: hidden;">
+        <div class="background-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-grid">
+                <!-- Left Content Column -->
+                <div class="hero-content" data-aos="fade-right" data-aos-duration="1200">
+                    <span class="badge" style="margin-bottom: 1.5rem; display: inline-flex; align-items: center; gap: 0.5rem;"><i class="fa-solid fa-couch" style="color: var(--accent);"></i> Bespoke Interior Curation</span>
+                    <h1>Sculpting Spaces, <span>Defining Lifestyles</span></h1>
+                    <p>We combine exquisite custom craftsmanship, spatial flow planning, and luxury furniture curation to transform residential and commercial properties into works of architectural art.</p>
+                    
+                    <div class="hero-actions">
+                        <a href="contact.html" class="btn btn-primary" style="padding: 0.9rem 2rem; font-size: 1rem; border-radius: var(--radius-sm); font-weight: 700; display: inline-flex; align-items: center; gap: 0.5rem;">Book Consultation <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="studio-portal.html" class="btn btn-secondary" style="padding: 0.9rem 2rem; font-size: 1rem; border-radius: var(--radius-sm); font-weight: 700;">Client Portal</a>
+                    </div>
+                    
+                    <!-- Performance Trust Badges -->
+                    <div class="hero-stats-quick">
+                        <div class="quick-stat">
+                            <h3>12+ Yrs</h3>
+                            <p>Design Craftsmanship</p>
+                        </div>
+                        <div class="quick-stat">
+                            <h3>350+</h3>
+                            <p>Spaces Curated</p>
+                        </div>
+                        <div class="quick-stat">
+                            <h3>98%</h3>
+                            <p>Client Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Graphic Column -->
+                <div class="hero-graphic" data-aos="fade-left" data-aos-duration="1200">
+                    <div class="hero-showroom-card">
+                        <!-- Showroom Viewport -->
+                        <div class="showroom-viewport">
+                            <div class="showroom-header">
+                                <h4 class="showroom-title">Artisan Craft Console</h4>
+                                <span class="showroom-status"><span class="status-pulse"></span> STUDIO VISUAL</span>
+                            </div>
+                            
+                            <!-- Vector Room Outline / Sofa SVG -->
+                            <div class="showroom-canvas">
+                                <svg viewBox="0 0 400 240" style="width: 100%; height: auto; overflow: visible;">
+                                    <!-- A sophisticated minimalist chair and background panel outline -->
+                                    <rect x="40" y="30" width="320" height="180" rx="16" fill="rgba(255, 255, 255, 0.02)" stroke="var(--border-glass)" stroke-width="1.5" />
+                                    <!-- Blueprint grid lines -->
+                                    <line x1="40" y1="90" x2="360" y2="90" stroke="rgba(255, 255, 255, 0.03)" stroke-width="1" />
+                                    <line x1="40" y1="150" x2="360" y2="150" stroke="rgba(255, 255, 255, 0.03)" stroke-width="1" />
+                                    <line x1="160" y1="30" x2="160" y2="210" stroke="rgba(255, 255, 255, 0.03)" stroke-width="1" />
+                                    <line x1="260" y1="30" x2="260" y2="210" stroke="rgba(255, 255, 255, 0.03)" stroke-width="1" />
+                                    
+                                    <!-- Lounge Chair Drawing (styled with CSS variables) -->
+                                    <path id="hero-furniture-back" d="M 170,180 L 190,90 Q 200,80 215,80 L 235,80 Q 250,80 240,110 L 205,180 Z" fill="var(--primary)" opacity="0.8" style="transition: fill var(--transition-normal);" />
+                                    <path id="hero-furniture-seat" d="M 205,180 L 305,175 Q 315,175 310,190 L 195,195 Z" fill="var(--accent)" style="transition: fill var(--transition-normal);" />
+                                    <line x1="210" y1="195" x2="195" y2="215" stroke="var(--accent)" stroke-width="4" stroke-linecap="round" />
+                                    <line x1="290" y1="195" x2="305" y2="215" stroke="var(--accent)" stroke-width="4" stroke-linecap="round" />
+                                    <line x1="245" y1="195" x2="245" y2="215" stroke="var(--accent)" stroke-width="4" stroke-linecap="round" />
+                                    
+                                    <!-- Dimension Indicators -->
+                                    <line x1="170" y1="70" x2="320" y2="70" stroke="var(--accent)" stroke-width="1" stroke-dasharray="3 3" opacity="0.6" />
+                                    <text x="245" y="60" style="font-size: 8px; fill: var(--accent); font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; font-family: var(--font-primary);" text-anchor="middle">Scale: 1.00m (Symmetry Active)</text>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                        <!-- Showroom Swatch Selector -->
+                        <div class="showroom-swatches">
+                            <div class="swatch-info">
+                                <span class="swatch-label">Timber Finish</span>
+                                <h3 id="swatch-active-name" class="swatch-val">Warm Walnut</h3>
+                            </div>
+                            <div class="swatch-options">
+                                <button class="swatch-btn active" data-swatch="walnut" style="background-color: #7F5539;" aria-label="Select Walnut Wood"></button>
+                                <button class="swatch-btn" data-swatch="oak" style="background-color: #DDB892;" aria-label="Select Oak Wood"></button>
+                                <button class="swatch-btn" data-swatch="ash" style="background-color: #E6CCB2;" aria-label="Select Ash Wood"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BRAND MARQUEE -->
+    <div class="scrolling-marquee">
+        <div class="marquee-content">
+            <div class="marquee-text">
+                ARTISAN CRAFTED <span>&bull;</span> LUXURY LIVING <span>&bull;</span> BESPOKE WALNUT <span>&bull;</span> SPATIAL HARMONY <span>&bull;</span> TIMELESS DESIGN <span>&bull;</span> SUSTAINABLE WOODS <span>&bull;</span> AMBIENT STYLING <span>&bull;</span>
+                ARTISAN CRAFTED <span>&bull;</span> LUXURY LIVING <span>&bull;</span> BESPOKE WALNUT <span>&bull;</span> SPATIAL HARMONY <span>&bull;</span> TIMELESS DESIGN <span>&bull;</span> SUSTAINABLE WOODS <span>&bull;</span> AMBIENT STYLING <span>&bull;</span>
+            </div>
+        </div>
+    </div>
+
+<section class="section-padding" id="quick-cards" style="padding-bottom: 2rem; position: relative; z-index: 10;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up" data-aos-duration="800" style="text-align: center; margin-bottom: 3rem;">
+                <span class="badge"><i class="fa-solid fa-couch"></i> Design Hub</span>
+                <h2>Start Your <span>Design Journey</span></h2>
+                <p>Choose your initial design path to audit current layout efficiency, select premium materials, and preview architectural drafts.</p>
+            </div>
+            <div class="services-grid">
+                <!-- Card 1 -->
+                <div class="glass-card journey-card journey-card-1" data-aos="fade-up" data-aos-duration="800">
+                    <div class="journey-card-image" style="height: 160px; overflow: hidden; margin-bottom: 1.5rem; border-radius: 36px 4px 36px 4px;">
+                        <img src="images/spatial_planning.webp" alt="Spatial Planning Blueprint" style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-slow);">
+                    </div>
+                    <div>
+                        <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
+                            <div class="service-icon-box" style="margin-bottom: 0;"><i class="fa-solid fa-compass"></i></div>
+                            <h3 style="margin: 0; font-size: 1.3rem;">Spatial Planning</h3>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">Analyze scale, traffic patterns, and lighting vectors before purchasing key signature pieces.</p>
+                    </div>
+                    <a href="contact.html" class="service-link" style="margin-top: 1.5rem;">Request Consultation <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="glass-card journey-card journey-card-2" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">
+                    <div class="journey-card-image" style="height: 160px; overflow: hidden; margin-bottom: 1.5rem; border-radius: 36px 4px 36px 4px;">
+                        <img src="images/material_curation.webp" alt="Material Curation Swatches" style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-slow);">
+                    </div>
+                    <div>
+                        <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
+                            <div class="service-icon-box" style="margin-bottom: 0;"><i class="fa-solid fa-palette"></i></div>
+                            <h3 style="margin: 0; font-size: 1.3rem;">Material & Palette</h3>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">Access exclusive walnut wood mills, linen weaves, and custom metal casting catalogs for total coordination.</p>
+                    </div>
+                    <a href="login.html" class="service-link" style="margin-top: 1.5rem;">Explore Texture Studio <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="glass-card journey-card journey-card-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                    <div class="journey-card-image" style="height: 160px; overflow: hidden; margin-bottom: 1.5rem; border-radius: 36px 4px 36px 4px;">
+                        <img src="images/walnut_lounge.webp" alt="Bespoke Furnishings" style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-slow);">
+                    </div>
+                    <div>
+                        <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
+                            <div class="service-icon-box" style="margin-bottom: 0;"><i class="fa-solid fa-pencil"></i></div>
+                            <h3 style="margin: 0; font-size: 1.3rem;">Interior Architects</h3>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">Direct coordination with senior furniture designers and spatial planners, bypassing intermediate managers.</p>
+                    </div>
+                    <a href="about.html" class="service-link" style="margin-top: 1.5rem;">Meet Designers <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+       FEATURED SHOWROOM COLLECTIONS
+       ========================================== -->
+    <section class="section-padding" id="showroom-collections" style="background-color: var(--bg-secondary); position: relative; z-index: 10;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up" data-aos-duration="800" style="text-align: center; margin-bottom: 4rem;">
+                <span class="badge"><i class="fa-solid fa-gem"></i> Curated Collections</span>
+                <h2>Featured <span>Showroom Lines</span></h2>
+                <p>Explore our seasonal furniture releases, handcrafted from premium hardwoods and organic textiles.</p>
+            </div>
+            
+            <div class="collections-masonry">
+                <!-- Large Banner Card (Walnut Lounge) -->
+                <div class="collection-item large-banner" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="collection-image-wrapper">
+                        <img src="images/walnut_lounge.webp" alt="The Walnut Lounge Collection">
+                    </div>
+                    <div class="collection-details-overlay">
+                        <span class="collection-tag">Walnut Series</span>
+                        <h3>The Soho Walnut Lounge</h3>
+                        <p>Organic leather seating meeting structural walnut frames for low-slung, premium comfort.</p>
+                        <a href="services.html" class="btn btn-primary btn-sm">Explore Collection <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Side Cards (Staggered Side Grid) -->
+                <div class="collection-side-grid">
+                    <div class="collection-item side-card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
+                        <div class="collection-image-wrapper">
+                            <img src="images/material_curation.webp" alt="Organic Textiles Collection">
+                        </div>
+                        <div class="collection-details-overlay">
+                            <span class="collection-tag">Textile Studio</span>
+                            <h3>Italian Linen Sanctuary</h3>
+                            <p>Hand-woven neutral weaves, custom stitching, and drapery curation.</p>
+                            <a href="services.html" class="service-link">View Linens <i class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="collection-item side-card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                        <div class="collection-image-wrapper">
+                            <img src="images/spatial_planning.webp" alt="Custom Architectural Fittings">
+                        </div>
+                        <div class="collection-details-overlay">
+                            <span class="collection-tag">Metal Casting</span>
+                            <h3>Bespoke Brass Fittings</h3>
+                            <p>Custom cabinet pull knobs, handles, and custom hardware joints.</p>
+                            <a href="services.html" class="service-link">View Fittings <i class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="section-padding" id="inspiration-lookbook" style="position: relative; z-index: 10;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up" data-aos-duration="800" style="text-align: center; margin-bottom: 4rem;">
+                <span class="badge"><i class="fa-solid fa-camera"></i> Style Inspiration</span>
+                <h2>Timeless Spaces, <span>Real Homes</span></h2>
+                <p>Browse curated residential interiors styling featuring custom Stackly wood carpentry, upholstered fabrics, and ambient lighting.</p>
+            </div>
+            
+            <div class="lookbook-grid">
+                <!-- Lookbook Item 1 (Dining Room) -->
+                <div class="lookbook-card" data-aos="fade-up" data-aos-duration="800">
+                    <div class="lookbook-image-wrapper">
+                        <img src="images/lookbook_dining.webp" alt="Minimalist Luxury Dining Room by Stackly" style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-slow);">
+                    </div>
+                    <div class="lookbook-info">
+                        <span class="lookbook-location">Soho Penthouse</span>
+                        <h3>Monolithic Dining Space</h3>
+                    </div>
+                </div>
+                
+                <!-- Lookbook Item 2 (Bedroom) -->
+                <div class="lookbook-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">
+                    <div class="lookbook-image-wrapper">
+                        <img src="images/lookbook_bedroom.webp" alt="Luxurious Modern Bedroom Sanctuary by Stackly" style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-slow);">
+                    </div>
+                    <div class="lookbook-info">
+                        <span class="lookbook-location">Greenwich Estate</span>
+                        <h3>The Linen Sanctuary</h3>
+                    </div>
+                </div>
+                
+                <!-- Lookbook Item 3 (Outdoor Lounge) -->
+                <div class="lookbook-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                    <div class="lookbook-image-wrapper">
+                        <img src="images/lookbook_outdoor.webp" alt="Teak Wood Outdoor Pool Deck Lounge by Stackly" style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-slow);">
+                    </div>
+                    <div class="lookbook-info">
+                        <span class="lookbook-location">Malibu Residence</span>
+                        <h3>Coastal Teak Deck</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="section-padding" id="brand-advantage">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-visual" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="about-image-wrapper">
+                        <img src="images/about_team.webp" alt="Aurelia Team Strategy Meeting">
+                    </div>
+                </div>
+                
+                <div class="about-content" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <span class="badge"><i class="fa-solid fa-bezier-curve"></i> Why Aurelia</span>
+                    <h2>Fusing Architectural Flow With <span>Artisan Craft</span></h2>
+                    <p>We bypass generic store-bought setups to analyze design metrics that directly impact your living experience: spatial efficiency, light reflection, and material longevity.</p>
+                    <p>Our multidisciplinary team acts as curators for your estate, coordinating custom timber milling, frame fabrication, and final staging setup.</p>
+                    
+                    <div class="about-pillars">
+                        <div class="pillar-card">
+                            <i class="fa-solid fa-chart-pie"></i>
+                            <div>
+                                <h4>Architectural Precision</h4>
+                                <p>We measure and map natural lighting angles before selecting textile tones.</p>
+                            </div>
+                        </div>
+                        <div class="pillar-card">
+                            <i class="fa-solid fa-bolt"></i>
+                            <div>
+                                <h4>Artisan Fabrications</h4>
+                                <p>Agile, custom wood-shop sprints to create custom furniture pieces tailored to your room layout.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="section-padding" id="integration-strip" style="background-color: var(--bg-secondary); padding: 4rem 0;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <span class="badge" style="margin-bottom: 0;"><i class="fa-solid fa-plug"></i> Materials & Partners</span>
+            </div>
+            <div class="tools-grid" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="glass-card partner-capsule"><i class="fa-solid fa-tree"></i><h4>Solid Walnut Wood</h4></div>
+                <div class="glass-card partner-capsule"><i class="fa-solid fa-scroll"></i><h4>Italian Linen Weaves</h4></div>
+                <div class="glass-card partner-capsule"><i class="fa-solid fa-cubes"></i><h4>Custom Brass Castings</h4></div>
+                <div class="glass-card partner-capsule"><i class="fa-solid fa-compass-drafting"></i><h4>Architonic Synergy</h4></div>
+            </div>
+        </div>
+    </section>
+
+<section class="section-padding" id="testimonials" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up" data-aos-duration="800">
+                <span class="badge"><i class="fa-solid fa-quote-left"></i> Client Reviews</span>
+                <h2>What Homeowners <span>Say About Us</span></h2>
+                <p>Real feedback from actual clients managing global platforms built on Aurelia design systems.</p>
+            </div>
+            
+            <div class="testimonials-slider" data-aos="fade-up" data-aos-duration="1000">
+                <div class="testimonial-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-box">
+                            <div class="testi-stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testi-quote">"Aurelia revamped our entire living room layout and integrated custom walnut cabinetry. The spatial harmony and balance of natural light are absolutely stunning. They are true master artisans."</p>
+                            <div class="testi-author">
+                                <img src="images/team_1.webp" alt="Client Sarah Jenkins">
+                                <div class="testi-info">
+                                    <h4>Sarah Jenkins</h4>
+                                    <p>Penthouse Resident, Soho NY</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 2 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-box">
+                            <div class="testi-stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testi-quote">"We revamped our dining hall and study using Aurelia's custom carpentry. The solid wood dining table is a true masterpiece and has become our family's favorite gathering spot."</p>
+                            <div class="testi-author">
+                                <img src="images/team_2.webp" alt="Client Alex Rivera">
+                                <div class="testi-info">
+                                    <h4>Alex Rivera</h4>
+                                    <p>Estate Owner, Greenwich CT</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-controls">
+                    <button class="slider-btn prev" aria-label="Previous Testimonial"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button class="slider-btn next" aria-label="Next Testimonial"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="section-padding" id="blog" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up" data-aos-duration="800">
+                <span class="badge"><i class="fa-solid fa-newspaper"></i> Design Journals</span>
+                <h2>Latest from the <span>Aurelia Journal</span></h2>
+                <p>Read expert articles on spatial layouts, premium textile curation, and luxury furniture buying guides.</p>
+            </div>
+            
+            <div class="blog-grid" data-aos="fade-up" data-aos-duration="1000">
+                <!-- Blog 1 -->
+                <div class="glass-card blog-card">
+                    <div class="blog-img-wrap">
+                        <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #1e1b4b, #311042); display: flex; align-items: center; justify-content: center;"><i class="fa-solid fa-magnifying-glass" style="font-size: 3.5rem; color: var(--accent);"></i></div>
+                        <span class="blog-tag">Interior Design</span>
+                    </div>
+                    <div class="blog-body">
+                        <div class="blog-meta">
+                            <span>July 6, 2026</span>
+                            <span>• 5 Min Read</span>
+                        </div>
+                        <h3>10 Interior Design Trends Defining Luxury Spaces</h3>
+                        <p>An in-depth analysis of natural lighting placement, custom walnut textures, and choosing accent wall colors.</p>
+                        <a href="#contact" class="blog-link">Read Article <i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Blog 2 -->
+                <div class="glass-card blog-card">
+                    <div class="blog-img-wrap">
+                        <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #090d16, #161e33); display: flex; align-items: center; justify-content: center;"><i class="fa-solid fa-bullseye" style="font-size: 3.5rem; color: var(--primary);"></i></div>
+                        <span class="blog-tag">Sourcing Timber</span>
+                    </div>
+                    <div class="blog-body">
+                        <div class="blog-meta">
+                            <span>July 2, 2026</span>
+                            <span>• 4 Min Read</span>
+                        </div>
+                        <h3>Why Solid Wood Matters for Modern Furniture</h3>
+                        <p>How to identify premium grain patterns and select between oak, ash, walnut, and cherry for custom cabinetry.</p>
+                        <a href="#contact" class="blog-link">Read Article <i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Blog 3 -->
+                <div class="glass-card blog-card">
+                    <div class="blog-img-wrap">
+                        <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #172554, #1e3a8a); display: flex; align-items: center; justify-content: center;"><i class="fa-solid fa-compass-drafting" style="font-size: 3.5rem; color: var(--accent);"></i></div>
+                        <span class="blog-tag">Home Staging & Styling</span>
+                    </div>
+                    <div class="blog-body">
+                        <div class="blog-meta">
+                            <span>June 28, 2026</span>
+                            <span>• 6 Min Read</span>
+                        </div>
+                        <h3>Restoring Balance: The Art of Spatial Flow</h3>
+                        <p>A look at furniture scales, layout clearances, and decorative focal points that make a home feel spacious.</p>
+                        <a href="#contact" class="blog-link">Read Article <i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="section-padding" style="padding-top: 0;">
+        <div class="container">
+            <div class="newsletter-banner" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="newsletter-content">
+                    <h2>Subscribe to Aurelia Growth Insights</h2>
+                    <p>Monthly style forecasts, custom wood-shop updates, and interior design trend reports delivered directly to your inbox. Zero spam.</p>
+                    
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your work email" aria-label="Work Email Address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+       FOOTER
+       ========================================== -->
+        
+<footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.webp" alt="Stackly Logo" style="height: 38px; width: auto; object-fit: contain; filter: brightness(0) invert(1);">
+                </a>
+                <p>Aurelia is a high-performance luxury Furniture & Interior Design studio built to elevate homes. We combine spatial flow analysis, custom wood craftsmanship, premium textile curation, and lighting design to create extraordinary spaces.</p>
+                <div class="social-icons-footer">
+                    <a href="404.html" aria-label="Facebook Link"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="404.html" aria-label="Twitter X Link"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="404.html" aria-label="LinkedIn Link"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="404.html" aria-label="Instagram Link"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="services.html">Services</a>
+                    <a href="workflow.html">Design Workflow</a>
+                    <a href="portfolio.html">Design Portfolio</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Services</h4>
+                <div class="footer-links">
+                    <a href="living-room.html">Living Room Styling</a>
+                    <a href="bedroom.html">Bespoke Bedroom Design</a>
+                    <a href="dining-room.html">Dining Room Architecture</a>
+                    <a href="home-staging.html">Home Staging & Styling</a>
+                    <a href="storage-solutions.html">Bespoke Storage Solutions</a>
+                    <a href="furniture-restoration.html">Furniture Restoration</a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.2rem;">Subscribe to receive style forecasts, custom wood-shop updates, and interior design trend reports from our team.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" aria-label="Submit Newsletter"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Stackly. All Rights Reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></a>
+
+    <!-- ==========================================
+       JAVASCRIPT SCRIPTS
+       ========================================== -->
+    <!-- GSAP for core smooth charts/timelines -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    
+    <!-- AOS for reveal-on-scroll animations -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // Init AOS
+        AOS.init({
+            once: true,
+            duration: 800,
+            easing: 'ease-out-cubic'
+        });
+    </script>
+    
+    <!-- Custom JS logic -->
+    <script src="js/main.js?v=2.7"></script>
+</body>
+</html>
