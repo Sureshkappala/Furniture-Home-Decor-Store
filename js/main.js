@@ -763,7 +763,7 @@ function initFormInputsValidation() {
             }
 
             setTimeout(() => {
-                window.location.href = (roleVal === 'admin') ? 'admin-dashboard.html' : 'dashboard.html';
+                window.location.href = 'studio-portal.html';
             }, 1500);
         });
     }
