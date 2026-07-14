@@ -215,6 +215,7 @@
             color: #fff;
             margin: 0;
         }
+        /* Clean Dashboard Tables with Proper Column Spacing */
         .db-table {
             width: 100%;
             border-collapse: collapse;
@@ -226,13 +227,17 @@
             font-weight: 700;
             text-transform: uppercase;
             padding-bottom: 1rem;
+            padding-right: 1.5rem;
             border-bottom: 1px solid rgba(255, 255, 255, 0.03);
         }
         .db-table td {
-            padding: 1.2rem 0;
+            padding: 1.2rem 1.5rem 1.2rem 0;
             border-bottom: 1px solid rgba(255, 255, 255, 0.02);
             font-size: 0.9rem;
             color: #9ca3af;
+        }
+        .db-table th:last-child, .db-table td:last-child {
+            padding-right: 0;
         }
         .db-table tr:last-child td {
             border-bottom: none;
@@ -385,7 +390,7 @@
             </div>
 
             <!-- Stats Row -->
-            <div class="db-stats-row" data-aos="fade-up" data-aos-duration="800">
+            <div class="db-stats-row">
                 <div class="stat-card">
                     <div>
                         <div class="stat-label">Total Spend</div>

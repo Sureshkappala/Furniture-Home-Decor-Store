@@ -2556,9 +2556,11 @@ body.light .mock-map {
         border-top: 1px solid var(--border-glass);
     }
     
+    .hero { min-height: auto; display: block; padding: 6rem 0 3rem 0; }
     .hero-grid { grid-template-columns: 1fr; gap: 3rem; }
-    .hero-showroom-card { padding: 1.8rem; }
+    .hero-showroom-card { padding: 1.8rem; max-width: 450px; margin: 0 auto; }
     .hero-mockup-wrapper { max-width: 500px; margin: 0 auto; }
+    [style*="display: grid"] { grid-template-columns: 1fr !important; gap: 2.5rem !important; }
     
     .about-grid { grid-template-columns: 1fr; gap: 3rem; }
     .about-visual { max-width: 480px; margin: 0 auto; }

@@ -8,6 +8,264 @@
     <link rel="stylesheet" href="css/style.css?v=2.7">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+<style>
+        /* Reused Dashboard Styles */
+        body {
+            background-color: #0b0f17;
+            color: #f3f4f6;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .db-container {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            min-height: 100vh;
+        }
+        .db-sidebar {
+            background-color: #0e1320;
+            border-right: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 2.5rem 1.8rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .sidebar-logo {
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+        .sidebar-logo img {
+            height: 38px;
+            
+        }
+        .sidebar-section-title {
+            color: #4b5563;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin: 1.5rem 0 0.5rem 0;
+        }
+        .sidebar-menu {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+        .sidebar-link {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.8rem 1rem;
+            color: #9ca3af;
+            text-decoration: none;
+            border-radius: var(--radius-sm);
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        .sidebar-link:hover, .sidebar-link.active {
+            background: rgba(16, 185, 129, 0.08);
+            color: #10b981;
+        }
+        .sidebar-link.active {
+            border-left: 3px solid #10b981;
+            padding-left: calc(1rem - 3px);
+        }
+        .signout-btn {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.8rem 1rem;
+            color: #ef4444;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 600;
+            border-radius: var(--radius-sm);
+            transition: background 0.2s;
+        }
+        .signout-btn:hover {
+            background: rgba(239, 68, 68, 0.08);
+        }
+        .db-main {
+            padding: 2.5rem 3rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            max-height: 100vh;
+            overflow-y: auto;
+        }
+        .db-top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .top-nav-title {
+            color: #9ca3af;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin: 0;
+        }
+        .user-profile-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+        .user-avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: #10b981;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: #fff;
+        }
+        .user-info {
+            text-align: right;
+        }
+        .user-name {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #f3f4f6;
+            margin: 0;
+        }
+        .user-role {
+            font-size: 0.75rem;
+            color: #6b7280;
+            margin: 0;
+        }
+        .db-welcome-hero h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #fff;
+            margin: 0 0 0.5rem 0;
+        }
+        .db-welcome-hero p {
+            color: #9ca3af;
+            font-size: 1rem;
+            margin: 0;
+        }
+        .db-grid {
+            display: grid;
+            grid-template-columns: 1.8fr 1.2fr;
+            gap: 1.8rem;
+        }
+        .grid-left {
+            display: flex;
+            flex-direction: column;
+            gap: 1.8rem;
+        }
+        .panel-box {
+            background-color: #121824;
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            border-radius: 8px;
+            padding: 1.8rem;
+        }
+        .panel-box-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        .panel-box-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #fff;
+            margin: 0;
+        }
+        .text-light-value {
+            color: #f3f4f6;
+            font-weight: 600;
+        }
+        .right-widget {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .form-grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        .db-input {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border-glass);
+            background: rgba(255, 255, 255, 0.02);
+            color: var(--text-light);
+            outline: none;
+            transition: border-color var(--transition-fast);
+            box-sizing: border-box;
+        }
+        .db-input:focus {
+            border-color: var(--primary);
+        }
+        .integration-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.8rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+        }
+        .integration-item:last-child {
+            border-bottom: none;
+        }
+        .integration-name {
+            color: #f3f4f6;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+        .integration-status {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #10b981;
+        }
+        @media (max-width: 1200px) {
+            .db-grid { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 768px) {
+            .db-container { grid-template-columns: 1fr; }
+            .db-sidebar { border-right: none; border-bottom: 1px solid rgba(255, 255, 255, 0.05); padding: 1.5rem; }
+            .sidebar-logo { margin-bottom: 0.5rem; }
+            .sidebar-section-title { display: none; }
+            .sidebar-menu { flex-direction: row; flex-wrap: wrap; margin-top: 1rem; }
+            .db-main { padding: 1.5rem; }
+            .form-grid-2 { grid-template-columns: 1fr; }
+        }
+    
+        /* Clean Dashboard Tables with Proper Column Spacing */
+        /* Clean Dashboard Tables with Proper Column Spacing */
+        .db-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+        .db-table th {
+            color: #4b5563;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding-bottom: 1rem;
+            padding-right: 1.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+        }
+        .db-table td {
+            padding: 1.2rem 1.5rem 1.2rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+            font-size: 0.9rem;
+            color: #9ca3af;
+        }
+        .db-table th:last-child, .db-table td:last-child {
+            padding-right: 0;
+        }
+        .db-table tr:last-child td {
+            border-bottom: none;
+        }
+    
+    </style>
 </head>
 <body>
     <div class="db-mobile-header">
@@ -139,7 +397,7 @@
                     <div class="right-widget">
                         <div class="panel-box" data-aos="fade-left" data-aos-duration="1000">
                             <h3 class="panel-box-title" style="margin-bottom: 1.5rem;">Controls</h3>
-                            <button class="btn btn-accent" style="width: 100%; padding: 0.8rem; margin-bottom: 1rem; font-weight: 700; border-radius: var(--radius-sm);" onclick="alert('Roster scheduling form opened... (Simulation)');">Assign Roster</button>
+                            <button class="btn btn-accent" style="width: 100%; padding: 0.8rem; margin-bottom: 1rem; font-weight: 700; border-radius: var(--radius-sm);">Assign Roster</button>
                         </div>
                     </div>
                 </div>

@@ -197,7 +197,7 @@
     </div>
 
 <section class="section-padding" id="atelier-heritage" style="padding: 6rem 0; position: relative; z-index: 10;">
-        <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center;">
+        <div class="container grid-2-col">
             
             <!-- Left Column: Copywriting -->
             <div data-aos="fade-right" data-aos-duration="1000">
@@ -594,11 +594,12 @@
     <!-- AOS for reveal-on-scroll animations -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        // Init AOS
+        // Init AOS (disabled on mobile for layout stability)
         AOS.init({
             once: true,
             duration: 800,
-            easing: 'ease-out-cubic'
+            easing: 'ease-out-cubic',
+            disable: 'mobile'
         });
     </script>
     
