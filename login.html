@@ -59,7 +59,7 @@
                 <img src="images/logo.webp" alt="Stackly Logo" style="height: 36px; width: auto; object-fit: contain; filter: brightness(0) invert(1);">
             </a>
             <h2 style="font-size: 1.8rem; font-weight: 700; margin-top: 1.2rem; color: var(--text-light);">Welcome Back</h2>
-            <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.4rem;">Access your client portal or marketing dashboard.</p>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.4rem;">Access your client portal or design dashboard.</p>
         </div>
 
         <form id="loginForm" style="display: flex; flex-direction: column; gap: 1.2rem; text-align: left;">
@@ -86,8 +86,8 @@
                     <i class="fa-solid fa-user" style="position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 0.9rem;"></i>
                     <select id="role" required style="width: 100%; padding: 0.8rem 1rem 0.8rem 2.5rem; border-radius: var(--radius-sm); border: 1px solid var(--border-glass); background: rgba(255, 255, 255, 0.03); color: var(--text-light); transition: border-color var(--transition-fast); outline: none; appearance: none; -webkit-appearance: none;">
                         <option value="" disabled selected style="background-color: var(--bg-secondary); color: var(--text-muted);">Select Role</option>
-                        <option value="client" style="background-color: var(--bg-secondary); color: var(--text-light);">Client (View Analytics)</option>
-                        <option value="admin" style="background-color: var(--bg-secondary); color: var(--text-light);">System Administrator (Manage Accounts)</option>
+                        <option value="client" style="background-color: var(--bg-secondary); color: var(--text-light);">Client (View Portal)</option>
+                        <option value="admin" style="background-color: var(--bg-secondary); color: var(--text-light);">Admin (Manage Accounts)</option>
                     </select>
                     <i class="fa-solid fa-chevron-down" style="position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 0.8rem; pointer-events: none;"></i>
                 </div>
@@ -106,12 +106,12 @@
         <div id="loginSuccess" style="display: none; padding: 2rem 0; animation: fadeIn 0.5s ease;">
             <i class="fa-solid fa-circle-check" style="font-size: 3.5rem; color: var(--accent); margin-bottom: 1rem;"></i>
             <h3 style="color: var(--text-light); font-size: 1.3rem;">Authentication Approved</h3>
-            <p style="color: var(--text-muted); margin: 0.5rem 0 1.5rem 0; font-size: 0.9rem;">Redirecting to your Aurelia Analytics panel...</p>
+            <p style="color: var(--text-muted); margin: 0.5rem 0 1.5rem 0; font-size: 0.9rem;">Redirecting to your Aurelia Design portal...</p>
             <a href="studio-portal.html" class="btn btn-primary" style="display: inline-block;">Go to Dashboard</a>
         </div>
 
         <div style="margin-top: 2rem; border-top: 1px solid var(--border-glass); padding-top: 1.5rem;">
-            <p style="color: var(--text-muted); font-size: 0.85rem;">Don't have a marketing account? <a href="register.html" style="color: var(--accent); font-weight: 600; text-decoration: none;">Register Here</a></p>
+            <p style="color: var(--text-muted); font-size: 0.85rem;">Don't have a design account? <a href="register.html" style="color: var(--accent); font-weight: 600; text-decoration: none;">Register Here</a></p>
         </div>
     </div>
 
