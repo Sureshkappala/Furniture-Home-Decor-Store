@@ -905,6 +905,11 @@ function initDashboardUserCredentials() {
                 elem.textContent = initials;
             }
         });
+        const storedRole = localStorage.getItem('loggedInUserRole');
+        const userRoleElements = document.querySelectorAll('.user-role');
+        userRoleElements.forEach(elem => {
+            elem.textContent = (storedRole === 'admin') ? 'Atelier Admin' : 'Client Member';
+        });
     }
     
     // Also update any email inputs in the profile dashboard

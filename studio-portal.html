@@ -404,26 +404,41 @@
                 <i class="fa-solid fa-xmark"></i>
             </button>
             <div>
-                <a href="studio-portal.html" class="sidebar-logo" style="display: inline-flex; background: white; padding: 0.5rem 0.8rem; border-radius: var(--radius-sm); width: 100%; box-sizing: border-box; justify-content: center; margin-bottom: 2rem;">
-                    <img src="images/logo.webp" alt="Stackly Logo" style="height: 24px; width: auto; object-fit: contain;">
+                <a href="studio-portal.html" class="sidebar-logo" style="display: block; text-align: center; margin-bottom: 2rem;">
+                    <img src="images/logo.webp" alt="Stackly Logo" style="height: 38px; width: auto; object-fit: contain; filter: brightness(0) invert(1);">
                 </a>
-                
-                <div class="sidebar-section-title">Main</div>
-                <nav class="sidebar-menu">
-                    <a href="studio-portal.html" class="sidebar-link active"><i class="fa-solid fa-chart-pie"></i> Dashboard</a>
-                </nav>
+                <!-- Client Side Menu -->
+                <div id="client-menu-sections">
+                    <div class="sidebar-section-title">Main</div>
+                    <nav class="sidebar-menu">
+                        <a href="studio-portal.html" class="sidebar-link"><i class="fa-solid fa-chart-pie"></i> Dashboard</a>
+                    </nav>
 
-                <div class="sidebar-section-title">Design Portfolios</div>
-                <nav class="sidebar-menu">
-                    <a href="living-room-console.html" class="sidebar-link"><i class="fa-solid fa-couch"></i> Living Room</a>
-                    <a href="bedroom-console.html" class="sidebar-link"><i class="fa-solid fa-bed"></i> Bedroom</a>
-                </nav>
+                    <div class="sidebar-section-title">Design Portfolios</div>
+                    <nav class="sidebar-menu">
+                        <a href="living-room-console.html" class="sidebar-link"><i class="fa-solid fa-couch"></i> Living Room</a>
+                        <a href="bedroom-console.html" class="sidebar-link"><i class="fa-solid fa-bed"></i> Bedroom</a>
+                    </nav>
 
-                <div class="sidebar-section-title">Account</div>
-                <nav class="sidebar-menu">
-                    <a href="client-profile-portal.html" class="sidebar-link"><i class="fa-solid fa-user"></i> My Profile</a>
-                    <a href="design-support-portal.html" class="sidebar-link"><i class="fa-solid fa-headset"></i> Support Desk</a>
-                </nav>
+                    <div class="sidebar-section-title">Account</div>
+                    <nav class="sidebar-menu">
+                        <a href="client-profile-portal.html" class="sidebar-link"><i class="fa-solid fa-user"></i> My Profile</a>
+                        <a href="design-support-portal.html" class="sidebar-link"><i class="fa-solid fa-headset"></i> Support Desk</a>
+                    </nav>
+                </div>
+
+                <!-- Admin Side Menu -->
+                <div id="admin-menu-sections" style="display: none;">
+                    <div class="sidebar-section-title">Admin Control</div>
+                    <nav class="sidebar-menu">
+                        <a href="studio-portal.html" class="sidebar-link"><i class="fa-solid fa-chart-pie"></i> Overview</a>
+                        <a href="client-profile-portal.html" class="sidebar-link"><i class="fa-solid fa-users"></i> Manage Clients</a>
+                        <a href="design-support-portal.html" class="sidebar-link"><i class="fa-solid fa-comments"></i> Support Tickets</a>
+                        <a href="inventory-manager.html" class="sidebar-link"><i class="fa-solid fa-warehouse"></i> Inventory Manager</a>
+                        <a href="artisan-schedule.html" class="sidebar-link"><i class="fa-solid fa-hammer"></i> Artisan Schedule</a>
+                    </nav>
+                </div>
+        
             </div>
             
             <a href="login.html" class="signout-btn"><i class="fa-solid fa-right-from-bracket"></i> Sign Out</a>
@@ -444,7 +459,8 @@
                 </div>
             </div>
 
-            <!-- Welcome Hero -->
+            <div id="client-panel-content">
+<!-- Welcome Hero -->
             <div class="db-welcome-hero" data-aos="fade-right" data-aos-duration="1000">
                 <h1>Hello, <span class="user-name" style="font-size: inherit; font-weight: inherit; color: inherit;">Richard Henderson</span></h1>
                 <p>Access your custom project blueprints, curated materials list, and spatial layout specs.</p>
@@ -490,7 +506,7 @@
             <div class="db-grid">
                 <!-- Left Column Boxes -->
                 <div class="grid-left">
-                    <!-- Box 1: Active Campaigns -->
+                    <!-- Box 1: Active Custom Rooms -->
                     <div class="panel-box" data-aos="fade-up" data-aos-duration="1000">
                         <div class="panel-box-header">
                             <h3 class="panel-box-title">Active Custom Rooms</h3>
@@ -602,7 +618,151 @@
                     </div>
                 </div>
             </div>
-        </main>
+        
+                </div>
+
+<div id="admin-panel-content" style="display: none;">
+            <!-- Welcome Hero -->
+            <div class="db-welcome-hero" data-aos="fade-right" data-aos-duration="1000">
+                <h1>Hello, <span class="user-name">Atelier Administrator</span></h1>
+                <p>Welcome to the Stackly control board. Monitor client custom projects, design stages, and inventory reserves.</p>
+            </div>
+
+            <!-- Stats Row -->
+            <div class="db-stats-row" data-aos="fade-up" data-aos-duration="800">
+                <div class="stat-card">
+                    <div>
+                        <div class="stat-label">Active Projects</div>
+                        <h3 class="stat-value">48 Rooms</h3>
+                    </div>
+                    <div class="stat-icon-wrapper icon-symmetry"><i class="fa-solid fa-couch"></i></div>
+                </div>
+                <div class="stat-card">
+                    <div>
+                        <div class="stat-label">Designers Staged</div>
+                        <h3 class="stat-value">14 Artisans</h3>
+                    </div>
+                    <div class="stat-icon-wrapper icon-items"><i class="fa-solid fa-compass-drafting"></i></div>
+                </div>
+                <div class="stat-card">
+                    <div>
+                        <div class="stat-label">Atelier Revenue</div>
+                        <h3 class="stat-value">$582,400</h3>
+                    </div>
+                    <div class="stat-icon-wrapper icon-spend"><i class="fa-solid fa-wallet"></i></div>
+                </div>
+                <div class="stat-card">
+                    <div>
+                        <div class="stat-label">Satisfaction Index</div>
+                        <h3 class="stat-value">99.4%</h3>
+                    </div>
+                    <div class="stat-icon-wrapper icon-conv"><i class="fa-solid fa-circle-check"></i></div>
+                </div>
+            </div>
+
+            <!-- Main Layout Grid -->
+            <div class="db-grid">
+                <!-- Left Column Boxes -->
+                <div class="grid-left">
+                    <div class="panel-box" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="panel-box-header">
+                            <h3 class="panel-box-title">Incoming Client Proposals</h3>
+                        </div>
+                        <table class="db-table">
+                            <thead>
+                                <tr>
+                                    <th>Client</th>
+                                    <th>Project Curation</th>
+                                    <th>Submission Date</th>
+                                    <th>Action Required</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-light-value">Eleanor Vance</td>
+                                    <td>Teak Deck Restoration</td>
+                                    <td>14 Feb 2026</td>
+                                    <td><span class="badge-status status-active" style="cursor:pointer;">Review Layout</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-light-value">Julian Drake</td>
+                                    <td>Brooklyn Walnut Loft</td>
+                                    <td>12 Feb 2026</td>
+                                    <td><span class="badge-status status-pending" style="cursor:pointer;">Assign Artisan</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="panel-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                        <div class="panel-box-header">
+                            <h3 class="panel-box-title">Artisan Workshop Queue</h3>
+                        </div>
+                        <table class="db-table">
+                            <thead>
+                                <tr>
+                                    <th>Staged Artisan</th>
+                                    <th>Room Assignment</th>
+                                    <th>Milestone Task</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-light-value">Sarah Jenkins (Walnut)</td>
+                                    <td>Soho Living Salon</td>
+                                    <td>Sanding & Joint Assembly</td>
+                                    <td><span class="badge-status status-completed">Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-light-value">Alex Rivera (Teak)</td>
+                                    <td>Malibu Coastal Deck</td>
+                                    <td>Upholstery Cushion Staging</td>
+                                    <td><span class="badge-status status-completed">Staged</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Right Column Widgets -->
+                <div class="right-widget">
+                    <div class="panel-box" data-aos="fade-left" data-aos-duration="1000">
+                        <h3 class="panel-box-title" style="margin-bottom: 1.5rem;">Timber & Material reserves</h3>
+                        <div class="widget-metric-row">
+                            <div class="widget-metric-header">
+                                <span>FSC Walnut Slabs</span>
+                                <span class="text-light-value">85% Capacity</span>
+                            </div>
+                            <div class="widget-progress-bar">
+                                <div class="widget-progress-fill" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="widget-metric-row">
+                            <div class="widget-metric-header">
+                                <span>Organic Leather Hides</span>
+                                <span class="text-light-value">60% Capacity</span>
+                            </div>
+                            <div class="widget-progress-bar">
+                                <div class="widget-progress-fill" style="width: 60%; background-color: #3b82f6;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel-box" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
+                        <h3 class="panel-box-title" style="margin-bottom: 1.5rem;">Popular Swatches</h3>
+                        <div class="keyword-item">
+                            <span class="keyword-name">"FSC European Walnut"</span>
+                            <span class="keyword-stats">14 Client orders</span>
+                        </div>
+                        <div class="keyword-item">
+                            <span class="keyword-name">"Raw Italian Linen Cream"</span>
+                            <span class="keyword-stats">8 Client orders</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                </div></main>
     </div>
 
     <!-- Theme Switch Button fixed in bottom right -->
@@ -618,5 +778,41 @@
         AOS.init({ once: true, duration: 800, easing: 'ease-out-cubic' });
     </script>
     <script src="js/main.js?v=2.7"></script>
+
+    <!-- Dynamic Sidebar Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const role = localStorage.getItem("loggedInUserRole") || "client";
+            const clientMenu = document.getElementById("client-menu-sections");
+            const adminMenu = document.getElementById("admin-menu-sections");
+            
+            const clientPanel = document.getElementById("client-panel-content");
+            const adminPanel = document.getElementById("admin-panel-content");
+            
+            if (role === "admin") {
+                if (clientMenu) clientMenu.style.display = "none";
+                if (adminMenu) adminMenu.style.display = "block";
+                if (clientPanel) clientPanel.style.display = "none";
+                if (adminPanel) adminPanel.style.display = "block";
+            } else {
+                if (clientMenu) clientMenu.style.display = "block";
+                if (adminMenu) adminMenu.style.display = "none";
+                if (clientPanel) clientPanel.style.display = "block";
+                if (adminPanel) adminPanel.style.display = "none";
+            }
+            
+            // Set active class dynamically
+            const currentPage = window.location.pathname.split("/").pop() || "studio-portal.html";
+            document.querySelectorAll(".sidebar-link").forEach(link => {
+                const href = link.getAttribute("href");
+                if (href === currentPage) {
+                    link.classList.add("active");
+                } else {
+                    link.classList.remove("active");
+                }
+            });
+        });
+    </script>
+        
 </body>
 </html>

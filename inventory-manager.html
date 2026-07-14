@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Inventory Manager - Live wood inventory, timber boards, and leather swatches.">
+    <title>Inventory Manager | Aurelia Portal</title>
+    <link rel="stylesheet" href="css/style.css?v=2.7">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+</head>
+<body>
+    <div class="db-mobile-header">
+        <button class="db-hamburger" aria-label="Toggle Menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <a href="index.html" class="db-mobile-logo">
+            <img src="images/logo.webp" alt="Stackly Logo" style="filter: brightness(0) invert(1);">
+        </a>
+        <div class="db-mobile-avatar">RH</div>
+    </div>
+    
+    <div class="db-sidebar-overlay"></div>
+
+    <div class="db-container">
+        <aside class="db-sidebar">
+            <button class="db-sidebar-close" aria-label="Close Menu">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div>
+                <a href="inventory-manager.html" class="sidebar-logo" style="display: block; text-align: center; margin-bottom: 2rem;">
+                    <img src="images/logo.webp" alt="Stackly Logo" style="height: 38px; width: auto; object-fit: contain; filter: brightness(0) invert(1);">
+                </a>
+                <!-- Client Side Menu -->
+                <div id="client-menu-sections">
+                    <div class="sidebar-section-title">Main</div>
+                    <nav class="sidebar-menu">
+                        <a href="studio-portal.html" class="sidebar-link"><i class="fa-solid fa-chart-pie"></i> Dashboard</a>
+                    </nav>
+                    <div class="sidebar-section-title">Design Portfolios</div>
+                    <nav class="sidebar-menu">
+                        <a href="living-room-console.html" class="sidebar-link"><i class="fa-solid fa-couch"></i> Living Room</a>
+                        <a href="bedroom-console.html" class="sidebar-link"><i class="fa-solid fa-bed"></i> Bedroom</a>
+                    </nav>
+                    <div class="sidebar-section-title">Account</div>
+                    <nav class="sidebar-menu">
+                        <a href="client-profile-portal.html" class="sidebar-link"><i class="fa-solid fa-user"></i> My Profile</a>
+                        <a href="design-support-portal.html" class="sidebar-link"><i class="fa-solid fa-headset"></i> Support Desk</a>
+                    </nav>
+                </div>
+                <!-- Admin Side Menu -->
+                <div id="admin-menu-sections" style="display: none;">
+                    <div class="sidebar-section-title">Admin Control</div>
+                    <nav class="sidebar-menu">
+                        <a href="studio-portal.html" class="sidebar-link"><i class="fa-solid fa-chart-pie"></i> Overview</a>
+                        <a href="client-profile-portal.html" class="sidebar-link"><i class="fa-solid fa-users"></i> Manage Clients</a>
+                        <a href="design-support-portal.html" class="sidebar-link"><i class="fa-solid fa-comments"></i> Support Tickets</a>
+                        <a href="inventory-manager.html" class="sidebar-link"><i class="fa-solid fa-warehouse"></i> Inventory Manager</a>
+                        <a href="artisan-schedule.html" class="sidebar-link"><i class="fa-solid fa-hammer"></i> Artisan Schedule</a>
+                    </nav>
+                </div>
+            </div>
+            <a href="login.html" class="signout-btn"><i class="fa-solid fa-right-from-bracket"></i> Sign Out</a>
+        </aside>
+
+        <main class="db-main">
+            <div class="db-top-nav">
+                <h4 class="top-nav-title">Timber & Supply Reserves</h4>
+                <div class="user-profile-badge">
+                    <div class="user-info">
+                        <h5 class="user-name">Richard Henderson</h5>
+                        <p class="user-role">Client Member</p>
+                    </div>
+                    <div class="user-avatar">RH</div>
+                </div>
+            </div>
+
+            <!-- Client view (Fallback) -->
+            <div id="client-panel-content">
+                <div class="db-welcome-hero" data-aos="fade-right" data-aos-duration="1000">
+                    <h1>Active Swatch Inventory</h1>
+                    <p>View raw wood logs, leather grains, and textiles assigned to your active room curations.</p>
+                </div>
+                <div class="db-grid">
+                    <div class="grid-left">
+                        <div class="panel-box" data-aos="fade-up" data-aos-duration="1000">
+                            <h3 class="panel-box-title" style="margin-bottom: 1.5rem;">Curation Materials</h3>
+                            <div class="keyword-item">
+                                <span class="keyword-name">European Walnut (Grade-A)</span>
+                                <span class="badge-status status-completed">In stock</span>
+                            </div>
+                            <div class="keyword-item">
+                                <span class="keyword-name">Raw Cream Organic Linen Weave</span>
+                                <span class="badge-status status-completed">In stock</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Admin view -->
+            <div id="admin-panel-content" style="display: none;">
+                <div class="db-welcome-hero" data-aos="fade-right" data-aos-duration="1000">
+                    <h1>Timber & Supply Reserves</h1>
+                    <p>Track current FSC hardwoods, leather reserves, and custom brass hardware inventories.</p>
+                </div>
+                <div class="db-grid">
+                    <div class="grid-left">
+                        <div class="panel-box" data-aos="fade-up" data-aos-duration="1000">
+                            <h3 class="panel-box-title" style="margin-bottom: 1.5rem;">Timber Inventory Stock</h3>
+                            <table class="db-table">
+                                <thead>
+                                    <tr>
+                                        <th>Material</th>
+                                        <th>Supplier Source</th>
+                                        <th>Current Slabs</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-light-value">European Walnut</td>
+                                        <td>Sustainable Forestry Bavaria</td>
+                                        <td>85 Slabs</td>
+                                        <td><span class="badge-status status-completed">Adequate</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-light-value">Coastal Solid Teak</td>
+                                        <td>Teak Plantations Java</td>
+                                        <td>42 Slabs</td>
+                                        <td><span class="badge-status status-completed">Adequate</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-light-value">Aromatic Red Cedar</td>
+                                        <td>Appalachian Wood Mills</td>
+                                        <td>12 Slabs</td>
+                                        <td><span class="badge-status status-pending" style="background-color:#d97706; color:#fff;">Low Stock</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="right-widget">
+                        <div class="panel-box" data-aos="fade-left" data-aos-duration="1000">
+                            <h3 class="panel-box-title" style="margin-bottom: 1.5rem;">Controls</h3>
+                            <button class="btn btn-accent" style="width: 100%; padding: 0.8rem; margin-bottom: 1rem; font-weight: 700; border-radius: var(--radius-sm);" onclick="alert('Procurement request sent! (Simulation)');">Reorder Timber</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div style="position: fixed; bottom: 2rem; right: 2rem; z-index: 100;">
+        <button class="theme-switch" aria-label="Toggle Theme">
+            <i class="fa-solid fa-moon"></i>
+            <i class="fa-solid fa-sun"></i>
+        </button>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, duration: 800, easing: 'ease-out-cubic' });
+    </script>
+    <script src="js/main.js?v=2.7"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const role = localStorage.getItem("loggedInUserRole") || "client";
+            const clientMenu = document.getElementById("client-menu-sections");
+            const adminMenu = document.getElementById("admin-menu-sections");
+            const clientPanel = document.getElementById("client-panel-content");
+            const adminPanel = document.getElementById("admin-panel-content");
+            
+            if (role === "admin") {
+                if (clientMenu) clientMenu.style.display = "none";
+                if (adminMenu) adminMenu.style.display = "block";
+                if (clientPanel) clientPanel.style.display = "none";
+                if (adminPanel) adminPanel.style.display = "block";
+            } else {
+                if (clientMenu) clientMenu.style.display = "block";
+                if (adminMenu) adminMenu.style.display = "none";
+                if (clientPanel) clientPanel.style.display = "block";
+                if (adminPanel) adminPanel.style.display = "none";
+            }
+            
+            const currentPage = window.location.pathname.split("/").pop() || "studio-portal.html";
+            document.querySelectorAll(".sidebar-link").forEach(link => {
+                const href = link.getAttribute("href");
+                if (href === currentPage) {
+                    link.classList.add("active");
+                } else {
+                    link.classList.remove("active");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
