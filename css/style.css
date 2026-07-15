@@ -149,23 +149,23 @@
     
     --gradient-purple-blue: linear-gradient(135deg, #9C6644 0%, #7F5539 100%);
     --gradient-blue-cyan: linear-gradient(135deg, #7F5539 0%, #B58A63 100%);
-    --gradient-dark: linear-gradient(185deg, #E8ECE6 0%, #DCE3D9 100%);
+    --gradient-dark: linear-gradient(185deg, #1A1A1A 0%, #262626 100%);
     --gradient-rainbow: linear-gradient(135deg, #9C6644 0%, #606C38 50%, #B58A63 100%);
     
     /* Layout Backgrounds */
-    --bg-primary: #E8ECE6;     /* Light Sage Green */
-    --bg-secondary: #DCE3D9;   /* Tinted Sage Gray */
-    --bg-tertiary: #CFD9CC;    /* Deep Sage Stone */
-    --bg-glass: rgba(232, 236, 230, 0.85);
-    --bg-glass-nav: rgba(232, 236, 230, 0.95);
-    --border-glass: rgba(96, 108, 56, 0.15);      /* Olive highlight */
-    --border-glass-focus: rgba(96, 108, 56, 0.4);
+    --bg-primary: #1A1A1A;     /* Warm Charcoal Gray */
+    --bg-secondary: #262626;   /* Lighter Charcoal */
+    --bg-tertiary: #333333;    /* Stone Gray */
+    --bg-glass: rgba(26, 26, 26, 0.85);
+    --bg-glass-nav: rgba(26, 26, 26, 0.95);
+    --border-glass: rgba(181, 138, 99, 0.12);      /* Bronze highlight */
+    --border-glass-focus: rgba(181, 138, 99, 0.4);
     
     /* Text Colors */
-    --text-main: #1A2018;      /* Dark Forest Charcoal */
-    --text-muted: #4A5248;
-    --text-light: #1A2018;
-    --text-dark: #FAF7F2;
+    --text-main: #F4EFE6;      /* Cream */
+    --text-muted: #9E988F;
+    --text-light: #FAF7F2;
+    --text-dark: #121212;
     
     /* Shadows */
     --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
@@ -532,7 +532,7 @@ ul {
     height: 50px;
     width: auto;
     object-fit: contain;
-    filter: brightness(0) invert(0);
+    filter: brightness(0) invert(1);
     transition: filter var(--transition-fast);
 }
 body.light .brand-logo-img {
@@ -577,7 +577,7 @@ body.light .preloader-logo-img {
     color: var(--text-light);
 }
 .nav-links a.active {
-    color: var(--accent) !important;
+    color: var(--bronze) !important;
 }
 .nav-links a::after {
     content: '';
@@ -1364,7 +1364,7 @@ body.light .showroom-title {
     gap: 0.5rem;
     font-size: 0.85rem;
     font-weight: 700;
-    color: #1A2018;
+    color: #ffffff;
     transition: color var(--transition-fast);
 }
 .service-link:hover {
@@ -2752,8 +2752,8 @@ html.menu-open, body.menu-open {
         left: 0 !important;
         width: 100% !important;
         height: 60px !important;
-        background: #E8ECE6 !important;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
+        background: #060910 !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
         padding: 0 1.5rem !important;
         z-index: 999 !important;
         display: flex !important;
@@ -2764,7 +2764,7 @@ html.menu-open, body.menu-open {
     .db-hamburger {
         background: transparent !important;
         border: none !important;
-        color: #1A2018 !important;
+        color: #fff !important;
         font-size: 1.4rem !important;
         cursor: pointer !important;
         display: flex !important;
@@ -2776,7 +2776,7 @@ html.menu-open, body.menu-open {
     
     .top-nav-title {
         font-size: 1.05rem !important;
-        color: #1A2018 !important;
+        color: #fff !important;
         font-weight: 700 !important;
         white-space: nowrap !important;
         overflow: hidden !important;
@@ -3274,7 +3274,7 @@ input::-ms-clear {
     font-family: var(--font-primary);
     font-size: 0.75rem;
     font-weight: 700;
-    color: #1A2018;
+    color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     margin-bottom: 0.6rem;
@@ -3364,7 +3364,7 @@ input::-ms-clear {
     font-family: var(--font-primary);
     font-size: 0.75rem;
     font-weight: 700;
-    color: #1A2018;
+    color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
@@ -3425,8 +3425,8 @@ body.light .lookbook-image-wrapper {
 
 /* Dashboard Console Light/Dark Theme Alignments */
 body.dashboard-body {
-    background-color: #E8ECE6 !important;
-    color: #1A2018 !important;
+    background-color: #1A1A1A !important;
+    color: #f3f4f6 !important;
 }
 body.light.dashboard-body {
     background-color: #f8fafc !important;
