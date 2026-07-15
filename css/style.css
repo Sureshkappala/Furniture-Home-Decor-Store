@@ -2725,6 +2725,10 @@ html.menu-open, body.menu-open {
     display: none;
 }
 
+.db-hamburger {
+    display: none;
+}
+
 .db-sidebar-overlay {
     display: none;
     position: fixed;
@@ -2750,11 +2754,12 @@ html.menu-open, body.menu-open {
         position: fixed !important;
         top: 0 !important;
         left: 0 !important;
-        width: 100% !important;
+        right: 0 !important;
+        width: auto !important;
         height: 60px !important;
         background: #060910 !important;
         border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
-        padding: 0 1.5rem !important;
+        padding: 0 1rem !important;
         z-index: 999 !important;
         display: flex !important;
         justify-content: space-between !important;
@@ -2884,9 +2889,26 @@ html.menu-open, body.menu-open {
     }
 
     body .db-main {
-        padding: 1.5rem !important;
+        padding: 1rem !important;
         max-height: none !important;
         overflow: visible !important;
+    }
+    
+    .panel-box {
+        padding: 1rem !important;
+    }
+    
+    .db-table th, .db-table td {
+        padding-top: 0.8rem !important;
+        padding-bottom: 0.8rem !important;
+        padding-right: 0.5rem !important;
+        font-size: 0.78rem !important;
+        white-space: normal !important;
+        word-break: break-word !important;
+    }
+    
+    .db-table th:last-child, .db-table td:last-child {
+        padding-right: 0 !important;
     }
     
     body .db-stats-row {
@@ -3425,7 +3447,7 @@ body.light .lookbook-image-wrapper {
 
 /* Dashboard Console Light/Dark Theme Alignments */
 body.dashboard-body {
-    background-color: #1A1A1A !important;
+    background-color: #0b0f17 !important;
     color: #f3f4f6 !important;
 }
 body.light.dashboard-body {
@@ -3488,4 +3510,11 @@ body.light.dashboard-body .text-light-value {
     body.light .user-role {
         color: #64748b !important;
     }
+}
+
+/* Responsive Table container to allow horizontal scroll on mobile */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }

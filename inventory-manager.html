@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Inventory Manager - Live wood inventory, timber boards, and leather swatches.">
     <title>Inventory Manager | Aurelia Portal</title>
-    <link rel="stylesheet" href="css/style.css?v=3.7">
+    <link rel="stylesheet" href="css/style.css?v=4.2">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 <style>
         /* Reused Dashboard Styles */
         body.dashboard-body {
-            background-color: #060910;
+            background-color: #0b0f17;
             color: #f3f4f6;
             font-family: 'Inter', system-ui, -apple-system, sans-serif;
             margin: 0;
@@ -23,7 +23,7 @@
             min-height: 100vh;
         }
         .db-sidebar {
-            background-color: #0a0e1a;
+            background-color: #0e1320;
             border-right: 1px solid rgba(255, 255, 255, 0.05);
             padding: 2.5rem 1.8rem;
             display: flex;
@@ -163,8 +163,8 @@
             gap: 1.8rem;
         }
         .panel-box {
-            background-color: #131929;
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            background-color: #121824;
+            border: 1px solid rgba(255, 255, 255, 0.03);
             border-radius: 8px;
             padding: 1.8rem;
         }
@@ -273,7 +273,7 @@
     
     </style>
 </head>
-<body>
+<body class="dashboard-body">
     <div class="db-mobile-header">
         <button class="db-hamburger" aria-label="Toggle Menu">
             <i class="fa-solid fa-bars"></i>
@@ -372,7 +372,7 @@
                     <div class="grid-left">
                         <div class="panel-box" data-aos="fade-up" data-aos-duration="1000">
                             <h3 class="panel-box-title" style="margin-bottom: 1.5rem;">Timber Inventory Stock</h3>
-                            <table class="db-table">
+                            <div class="table-responsive"><table class="db-table">
                                 <thead>
                                     <tr>
                                         <th>Material</th>
@@ -401,7 +401,7 @@
                                         <td><span class="badge-status status-pending" style="background-color:#d97706; color:#fff;">Low Stock</span></td>
                                     </tr>
                                 </tbody>
-                            </table>
+                            </table></div>
                         </div>
                     </div>
                     <div class="right-widget">
