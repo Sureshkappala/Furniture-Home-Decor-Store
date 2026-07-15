@@ -149,23 +149,23 @@
     
     --gradient-purple-blue: linear-gradient(135deg, #9C6644 0%, #7F5539 100%);
     --gradient-blue-cyan: linear-gradient(135deg, #7F5539 0%, #B58A63 100%);
-    --gradient-dark: linear-gradient(185deg, #121212 0%, #1A1C18 100%);
+    --gradient-dark: linear-gradient(185deg, #E8ECE6 0%, #DCE3D9 100%);
     --gradient-rainbow: linear-gradient(135deg, #9C6644 0%, #606C38 50%, #B58A63 100%);
     
     /* Layout Backgrounds */
-    --bg-primary: #121212;     /* Matte Black */
-    --bg-secondary: #1C1E1A;   /* Tinted Black */
-    --bg-tertiary: #262923;    /* Stone black */
-    --bg-glass: rgba(28, 30, 26, 0.75);
-    --bg-glass-nav: rgba(18, 18, 18, 0.9);
-    --border-glass: rgba(181, 138, 99, 0.12);      /* Bronze highlight */
-    --border-glass-focus: rgba(181, 138, 99, 0.4);
+    --bg-primary: #E8ECE6;     /* Light Sage Green */
+    --bg-secondary: #DCE3D9;   /* Tinted Sage Gray */
+    --bg-tertiary: #CFD9CC;    /* Deep Sage Stone */
+    --bg-glass: rgba(232, 236, 230, 0.85);
+    --bg-glass-nav: rgba(232, 236, 230, 0.95);
+    --border-glass: rgba(96, 108, 56, 0.15);      /* Olive highlight */
+    --border-glass-focus: rgba(96, 108, 56, 0.4);
     
     /* Text Colors */
-    --text-main: #F4EFE6;      /* Cream */
-    --text-muted: #9E988F;
-    --text-light: #FAF7F2;
-    --text-dark: #121212;
+    --text-main: #1A2018;      /* Dark Forest Charcoal */
+    --text-muted: #4A5248;
+    --text-light: #1A2018;
+    --text-dark: #FAF7F2;
     
     /* Shadows */
     --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
@@ -532,7 +532,7 @@ ul {
     height: 50px;
     width: auto;
     object-fit: contain;
-    filter: brightness(0) invert(1);
+    filter: brightness(0) invert(0);
     transition: filter var(--transition-fast);
 }
 body.light .brand-logo-img {
@@ -577,7 +577,7 @@ body.light .preloader-logo-img {
     color: var(--text-light);
 }
 .nav-links a.active {
-    color: #ffffff !important;
+    color: var(--accent) !important;
 }
 .nav-links a::after {
     content: '';
@@ -1364,7 +1364,7 @@ body.light .showroom-title {
     gap: 0.5rem;
     font-size: 0.85rem;
     font-weight: 700;
-    color: #ffffff;
+    color: #1A2018;
     transition: color var(--transition-fast);
 }
 .service-link:hover {
@@ -2752,8 +2752,8 @@ html.menu-open, body.menu-open {
         left: 0 !important;
         width: 100% !important;
         height: 60px !important;
-        background: #0f172a !important;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+        background: #E8ECE6 !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
         padding: 0 1.5rem !important;
         z-index: 999 !important;
         display: flex !important;
@@ -2764,7 +2764,7 @@ html.menu-open, body.menu-open {
     .db-hamburger {
         background: transparent !important;
         border: none !important;
-        color: #fff !important;
+        color: #1A2018 !important;
         font-size: 1.4rem !important;
         cursor: pointer !important;
         display: flex !important;
@@ -2776,7 +2776,7 @@ html.menu-open, body.menu-open {
     
     .top-nav-title {
         font-size: 1.05rem !important;
-        color: #fff !important;
+        color: #1A2018 !important;
         font-weight: 700 !important;
         white-space: nowrap !important;
         overflow: hidden !important;
@@ -3274,7 +3274,7 @@ input::-ms-clear {
     font-family: var(--font-primary);
     font-size: 0.75rem;
     font-weight: 700;
-    color: #ffffff;
+    color: #1A2018;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     margin-bottom: 0.6rem;
@@ -3364,7 +3364,7 @@ input::-ms-clear {
     font-family: var(--font-primary);
     font-size: 0.75rem;
     font-weight: 700;
-    color: #ffffff;
+    color: #1A2018;
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
@@ -3384,5 +3384,108 @@ input::-ms-clear {
     }
     .lookbook-image-wrapper {
         height: 220px;
+    }
+}
+
+/* ==========================================================================
+   THEME TOGGLE CONTRAST & DASHBOARD OVERRIDES
+   ========================================================================== */
+body.light .menu-toggle {
+    color: var(--text-dark) !important;
+}
+body.light .drawer-close {
+    color: var(--text-dark) !important;
+}
+body.light .collection-item, body.light .lookbook-card {
+    border-color: rgba(0, 0, 0, 0.08) !important;
+    background: #ffffff !important;
+}
+body.light .collection-item:hover, body.light .lookbook-card:hover {
+    border-color: var(--bronze) !important;
+}
+body.light .lookbook-info {
+    background: #f8fafc !important;
+}
+body.light .lookbook-location {
+    color: var(--bronze) !important;
+}
+body.light .lookbook-info h3 {
+    color: var(--text-dark) !important;
+}
+
+/* Image framing borders to prevent background blending in dark mode */
+.collection-image-wrapper,
+.lookbook-image-wrapper {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+body.light .collection-image-wrapper,
+body.light .lookbook-image-wrapper {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Dashboard Console Light/Dark Theme Alignments */
+body.dashboard-body {
+    background-color: #E8ECE6 !important;
+    color: #1A2018 !important;
+}
+body.light.dashboard-body {
+    background-color: #f8fafc !important;
+    color: #0f172a !important;
+}
+body.light.dashboard-body .db-sidebar {
+    background-color: #ffffff !important;
+    border-right: 1px solid rgba(0, 0, 0, 0.08) !important;
+}
+body.light.dashboard-body .sidebar-section-title {
+    color: #94a3b8 !important;
+}
+body.light.dashboard-body .sidebar-link {
+    color: #64748b !important;
+}
+body.light.dashboard-body .sidebar-link:hover,
+body.light.dashboard-body .sidebar-link.active {
+    background: rgba(181, 138, 99, 0.08) !important;
+    color: var(--bronze) !important;
+}
+body.light.dashboard-body .stat-card,
+body.light.dashboard-body .panel-box {
+    background-color: #ffffff !important;
+    border: 1px solid rgba(0, 0, 0, 0.08) !important;
+}
+body.light.dashboard-body .stat-label {
+    color: #64748b !important;
+}
+body.light.dashboard-body .stat-value {
+    color: #0f172a !important;
+}
+body.light.dashboard-body .panel-box-title {
+    color: #0f172a !important;
+}
+body.light.dashboard-body .db-table th {
+    color: #64748b !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+body.light.dashboard-body .db-table td {
+    color: #334155 !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03) !important;
+}
+body.light.dashboard-body .text-light-value {
+    color: #0f172a !important;
+}
+
+/* Dashboard Mobile Navigation Header Light Mode fixes */
+@media (max-width: 768px) {
+    body.light .db-top-nav {
+        background: #ffffff !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
+    }
+    body.light .db-hamburger {
+        color: #0f172a !important;
+    }
+    body.light .top-nav-title {
+        color: #0f172a !important;
+    }
+    body.light .user-role {
+        color: #64748b !important;
     }
 }
