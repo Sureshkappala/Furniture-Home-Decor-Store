@@ -808,7 +808,7 @@ body.light .theme-switch .fa-sun { display: block; color: #f59e0b; }
     border: 1px solid var(--border-glass);
     box-shadow: var(--shadow-glow);
     animation: float 6s ease-in-out infinite;
-    background: var(--bg-glass);
+    background: rgba(20, 22, 18, 0.85);
     backdrop-filter: blur(24px);
     transition: border-color var(--transition-normal);
 }
@@ -849,7 +849,7 @@ body.light .theme-switch .fa-sun { display: block; color: #f59e0b; }
     animation: pulse 2s infinite;
 }
 .showroom-canvas {
-    background: rgba(0, 0, 0, 0.15);
+    background: rgba(181, 138, 99, 0.08);
     border-radius: var(--radius-sm);
     padding: 1rem;
     display: flex;
@@ -3246,7 +3246,7 @@ input::-ms-clear {
     font-family: var(--font-primary);
     font-size: 0.75rem;
     font-weight: 700;
-    color: var(--accent);
+    color: var(--bronze);
     text-transform: uppercase;
     letter-spacing: 0.1em;
     margin-bottom: 0.6rem;
@@ -3333,7 +3333,7 @@ input::-ms-clear {
     font-family: var(--font-primary);
     font-size: 0.75rem;
     font-weight: 700;
-    color: var(--accent);
+    color: var(--bronze);
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
